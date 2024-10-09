@@ -1,10 +1,22 @@
+import asyncpg
+import os
+from dotenv import load_dotenv
 class Database:
+
     def __init__(self):
+        self._conn = None
 
-        supabase_url = os.getenv('SUPABASE_URL')
-        supabase_key = os.getenv('SUPABASE_KEY2')
+    async def connect(self):
+        load_dotenv()
+        self._conn = await asyncpg.connect(
+            user=os.getenv('USER'),
+            password=os.getenv('PASSWORD'),
+            database=os.getenv('DATABASE'),
+            host=os.getenv('HOST'),
+            port=os.getenv('PORT')
+        )
 
-        self.supabase_client = create_client(supabase_url, supabase_key)
-
-    def get_conn(self):
-        return self.supabase_client
+    async def get_conn(self):
+        if self._conn is None:
+            await self.connect()
+        return self._conn

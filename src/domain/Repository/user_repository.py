@@ -8,17 +8,17 @@ class User_repository:
         self.conn = Database()
 
     async def get_user(self):
-        conn = self.conn.get_conn()
-        sql = "SELECT * FROM User;"
+        conn = await self.conn.get_conn()
+        sql = "SELECT * FROM users;"
         try:
-            return await conn.fetchval(sql)
+            return await conn.fetch(sql)
         except Exception as e:
             raise Exception(f"Error : {str(e)}")
 
     async def get_user_by_id(self, id1):
-        conn = self.conn.get_conn()
+        conn = await self.conn.get_conn()
         sql = "SELECT * FROM User WHERE userid = $1;"
         try:
-            return await conn.execute(sql, id1)
+            return await conn.fetch(sql, id1)
         except Exception as e:
             raise Exception(f"Error : {str(e)}")
