@@ -1,6 +1,6 @@
 import asyncpg
 from ..database import Database
-
+from src.infraestructure.user import User
 
 class User_repository:
 
@@ -17,8 +17,12 @@ class User_repository:
 
     async def get_user_by_id(self, id1):
         conn = await self.conn.get_conn()
-        sql = "SELECT * FROM User WHERE userid = $1;"
+        sql = "SELECT * FROM users WHERE id = $1;"
         try:
-            return await conn.fetch(sql, id1)
+            user = await conn.fetch(sql, id1)
+            user = user[0]
+            if user:
+                return User(**dict(user))
+            return None
         except Exception as e:
             raise Exception(f"Error : {str(e)}")
