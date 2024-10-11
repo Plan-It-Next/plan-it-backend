@@ -42,6 +42,8 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-E
     SELECT * FROM create_graph('\''my_graph'\'');\n\
 EOSQL' > /docker-entrypoint-initdb.d/init-age-db.sh
 
+COPY ./script.sql /docker-entrypoint-initdb.d/
+
 # Make the script executable
 RUN chmod +x /docker-entrypoint-initdb.d/init-age-db.sh
 
