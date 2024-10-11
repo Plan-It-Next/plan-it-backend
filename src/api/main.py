@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from ..domain.Repository.user_repository import User_repository
+from uuid import UUID
 
 app = FastAPI()
 user_repo = User_repository()
@@ -10,6 +11,6 @@ async def get_users():
     return users
 
 @app.get("/users/{user_id}")
-async def get_user_by_id(user_id: int):
+async def get_user_by_id(user_id: UUID):
     user = await user_repo.get_user_by_id(user_id)
     return user
