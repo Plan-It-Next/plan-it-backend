@@ -1,6 +1,7 @@
 -- Habilitar la extensión AGE
 CREATE EXTENSION IF NOT EXISTS age;
 LOAD 'age';
+SET search_path = ag_catalog, "$user", public;
 
 -- Crear un nuevo grafo
 SELECT create_graph('el_grefo');

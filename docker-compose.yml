@@ -2,14 +2,12 @@ version: '3.8'
 
 services:
   postgres:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: postgres-age:latest
+    image: apache/age
     container_name: postgres-age
     environment:
       POSTGRES_PASSWORD: mysecretpassword
       POSTGRES_DB: mydb
+      POSTGRES_USER: postgres
     ports:
       - "5432:5432"
     volumes:
