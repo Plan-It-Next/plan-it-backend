@@ -24,6 +24,19 @@ $$) AS (n agtype);
 
 -- Insertar aristas
 SELECT * FROM cypher('el_grefo', $$
+MATCH
+  (n1:Estacion {id:1}),
+  (n2:Estacion {id:2}),
+  (n3:Estacion {id:3}),
+  (n4:Estacion {id:4}),
+  (n5:Estacion {id:5}),
+  (n6:Estacion {id:6}),
+  (n7:Estacion {id:7}),
+  (n8:Estacion {id:8}),
+  (n9:Estacion {id:9}),
+  (n10:Estacion {id:10}),
+  (n11:Estacion {id:11}),
+  (n12:Estacion {id:12})
 CREATE
 (n1)-[:RUTA {id:1, tipo:'tren', fecha_hora_salida:'2023-10-15T08:00:00', fecha_hora_llegada:'2023-10-15T12:00:00', precio_billete:50, distancia:600, duracion:4}]->(n4),
 (n1)-[:RUTA {id:2, tipo:'tren', fecha_hora_salida:'2023-10-16T08:00:00', fecha_hora_llegada:'2023-10-16T11:00:00', precio_billete:45, distancia:350, duracion:3}]->(n7),
