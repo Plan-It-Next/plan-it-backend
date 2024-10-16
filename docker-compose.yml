@@ -2,17 +2,19 @@ version: '3.8'
 
 services:
   postgres:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: postgres-age:latest
+    image: apache/age
     container_name: postgres-age
     environment:
       POSTGRES_PASSWORD: mysecretpassword
       POSTGRES_DB: mydb
+      POSTGRES_USER: postgres
     ports:
       - "5432:5432"
+    networks:
+      mi_red:
+        ipv4_address: 172.20.0.2
     volumes:
+      - ./script.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
@@ -20,5 +22,22 @@ services:
       timeout: 5s
       retries: 5
 
+  viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      mi_red:
+        ipv4_address: 172.20.0.3
+
 volumes:
   postgres_data:
+
+networks:
+  mi_red:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
