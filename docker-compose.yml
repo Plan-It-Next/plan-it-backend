@@ -9,8 +9,6 @@ services:
       POSTGRES_DB: mydb
       POSTGRES_USER: postgres
     network_mode: host
-    ports:
-      - "5432:5432"
     volumes:
       - ./script.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
@@ -25,8 +23,6 @@ services:
       context: .
       dockerfile: Dockerfile
     network_mode: host
-    ports:
-      - "3000:3000"
 
 volumes:
   postgres_data:
