@@ -28,13 +28,8 @@ class GraphRepository:
             await self.first()
         conn = await self.conn.get_conn()
 
+
         sql = '''
-                CREATE EXTENSION IF NOT EXISTS age;'''
-        sql12 = '''
-                LOAD 'age';'''
-        sql13 = '''
-                SET search_path = ag_catalog, "$user", public;'''
-        sql2 = '''
         SELECT *
                 FROM cypher('el_grefo', $$
                     MATCH (n)
@@ -45,7 +40,7 @@ class GraphRepository:
             #await conn.fetch(sql)
             #await conn.fetch(sql12)
             #await conn.fetch(sql13)
-            prueba23 = await conn.fetch(sql2)
+            prueba23 = await conn.fetch(sql)
 
             return prueba23
         except Exception as e:
