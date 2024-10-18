@@ -1,11 +1,13 @@
 from fastapi import FastAPI
 from ..domain.Repository.user_repository import UserRepository
 from src.domain.Repository.group_repository import GroupRepository
+from src.domain.Repository.graph_repository import GraphRepository
 from uuid import UUID
 
 app = FastAPI()
 user_repo = UserRepository()
 group_repo = GroupRepository()
+graph_repo = GraphRepository()
 
 @app.get("/users")
 async def get_all_users():
@@ -33,3 +35,7 @@ async def get_users_by_group(group_id: UUID):
     users = await user_repo.get_users_by_group(group_id)
     return users
 
+@app.get("/prueba")
+async def get_grafo():
+    grafo =await graph_repo.prueba()
+    return grafo
