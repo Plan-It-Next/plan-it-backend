@@ -1,52 +1,25 @@
-# Use PostgreSQL 15
-FROM postgres:15
+# Use a minimal base image with Node.js 14
+FROM node:14-alpine
 
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    git \
-    curl \
-    postgresql-server-dev-15 \
-    libreadline-dev \
-    zlib1g-dev \
-    flex \
-    bison \
-    libxml2-dev \
-    libxslt-dev \
-    libssl-dev \
-    libxml2-utils \
-    xsltproc \
-    ccache
+# Set working directory in container
+WORKDIR /app
 
-# Install Trunk
-RUN curl https://get.trunk.io -fsSL | bash
+# Install git to clone the repository
+RUN apk add --no-cache git
 
-# Clone and install AGE
-RUN git clone https://github.com/apache/age.git && \
-    cd age && \
-    git checkout PG15 && \
-    make && \
-    make install
+# Clone the repository from GitHub
+RUN git clone https://github.com/apache/age-viewer.git .
 
-# Set environment variables
-ENV POSTGRES_PASSWORD=mysecretpassword
+# Install node modules
+RUN npm install
 
-# Create initialization script
-RUN echo '#!/bin/bash\n\
-set -e\n\
-\n\
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL\n\
-    CREATE EXTENSION age;\n\
-    LOAD '\''age'\'';\n\
-    SET search_path = ag_catalog, "$user", public;\n\
-    SELECT * FROM create_graph('\''my_graph'\'');\n\
-EOSQL' > /docker-entrypoint-initdb.d/init-age-db.sh
+# Expose the port the app runs on
+EXPOSE 3000
 
-# Make the script executable
-RUN chmod +x /docker-entrypoint-initdb.d/init-age-db.sh
+# Install pm2 globally
+RUN npm install pm2
 
-# Expose the PostgreSQL port
-EXPOSE 5432
+RUN npm run setup
 
-# Use host network
-CMD ["postgres", "-c", "shared_preload_libraries=age"]
+# Set default command to run the application
+CMD ["npm", "run", "start"]
