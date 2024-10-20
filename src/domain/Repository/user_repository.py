@@ -35,11 +35,6 @@ class UserRepository:
                     WHERE us.group_id = $1;'''
         try:
             users = await conn.fetch(sql, id1)
-            if not users:
-                raise Exception("No users found in group")
-            print(users)
             return [User(**dict(user)) for user in users]
         except Exception as e:
-            print(f"Error: {str(e)}")
-            print(f"Users result: {users}")
             raise Exception(f"Error : {str(e)}")
