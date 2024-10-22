@@ -9,7 +9,7 @@ class Database:
     async def connect(self):
         load_dotenv()
         self._conn = await asyncpg.connect(
-            user=os.getenv('USER'),
+            user=os.getenv('USERDB'),
             password=os.getenv('PASSWORD'),
             database=os.getenv('DATABASE'),
             host=os.getenv('HOST'),

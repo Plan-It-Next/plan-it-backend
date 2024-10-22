@@ -56,7 +56,7 @@ class GraphRepository:
         query = """
         SELECT *
                 FROM cypher('el_grefo', $$
-                MATCH (n:Estacion)-[r:RUTA]->(m:Estacion)
+                MATCH (n:Estacion)-[r:RUTA*3]->(m:Estacion)
                 """
 
         filters_nodos = []
@@ -78,7 +78,25 @@ class GraphRepository:
 
 
         query += ''' RETURN n, r, m
+                LIMIT 2
                   $$) AS result(nodo1 agtype, relacion agtype, nodo2 agtype)'''
         print(query)
         result = await conn.fetch(query)
         return result
+
+    async def maxSetFilterTrip:
+    '''
+        SELECT *
+                FROM cypher(
+                'el_grefo',
+                $$
+                MATCH p = (nodo_inicio:Estacion)-[rel:RUTA*1..5]->(nodo_fin:Estacion) WHERE nodo_inicio.ciudad = 'Valencia' AND nodo_fin.ciudad = 'Madrid'
+                UNWIND rel AS r
+                WITH nodo_inicio, nodo_fin, p, SUM(r.distancia) AS total_distancia
+                WHERE total_distancia <= 500
+                RETURN p
+                ORDER BY total_distancia ASC
+                LIMIT 3
+                $$
+        ) AS (camino agtype);
+        '''
