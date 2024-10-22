@@ -67,7 +67,7 @@ class GraphRepository:
         if filtro.ciudad_destino:
             filters_nodos.append(f"m.ciudad = '{filtro.ciudad_destino}'")
         if filtro.pais:
-            filters_nodos.append(f"n.properties->>'pais' = '{filtro.pais}'")
+            filters_nodos.append(f"n.pais = '{filtro.pais}'")
         if filtro.tipo_estacion:
             filters_nodos.append(f"r.tipo = '{filtro.tipo_estacion}'")
 
