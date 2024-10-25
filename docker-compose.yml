@@ -15,6 +15,7 @@ services:
         ipv4_address: 172.20.0.2
     volumes:
       - ./script.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./scriptBD.sql:/docker-entrypoint-initdb.d/extra.sql
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]

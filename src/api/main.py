@@ -1,15 +1,14 @@
 from fastapi import FastAPI
-from ..domain.Repository.user_repository import User_repository
+from src.api.routes.api_users import router as users_router
+from src.api.routes.api_groups import router as groups_router
+from src.api.routes.api_trips import router as trips_router
+from src.api.routes.api_login import router as login_router
 
 app = FastAPI()
-user_repo = User_repository()
 
-@app.get("/users")
-async def get_users():
-    users = await user_repo.get_user()
-    return users
 
-@app.get("/users/{user_id}")
-async def get_user_by_id(user_id: int):
-    user = await user_repo.get_user_by_id(user_id)
-    return user
+app.include_router(users_router, prefix="/users", tags=["users"])
+app.include_router(groups_router, prefix="/groups", tags=["groups"])
+app.include_router(trips_router, prefix="/trip", tags=["trip"])
+app.include_router(login_router, prefix="/login", tags=["login"])
+
