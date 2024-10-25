@@ -1,6 +1,5 @@
 from ..database import Database
-from src.domain.user import User
-from src.domain.group import Group
+from src.domain.user import User, UserAll
 
 class UserRepository:
 
@@ -38,3 +37,18 @@ class UserRepository:
             return [User(**dict(user)) for user in users]
         except Exception as e:
             raise Exception(f"Error : {str(e)}")
+
+    async def get_user_by_email(self, email):
+        conn = await self.conn.get_conn()
+        sql = '''SELECT *
+                    FROM users
+                    WHERE email = $1;'''
+        try:
+            user = await conn.fetch(sql,email)
+            if user:
+                return UserAll(**dict(user[0]))
+            return None
+        except Exception as e:
+            raise Exception(f"Error : {str(e)}")
+
+

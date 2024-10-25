@@ -1,11 +1,14 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends
 from src.domain.Repository.user_repository import UserRepository
 from typing import List
 from uuid import UUID
 from src.domain.user import User
+from src.infraestructure.jwt_validator import JwtVal
+from src.infraestructure.auth_middleware import require_authentication
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(require_authentication)])
 user_repo = UserRepository()
+jwt_val = JwtVal()
 
 @router.get("/", response_model=List[User])
 async def get_all_users():
@@ -64,3 +67,4 @@ async def get_users_by_group(group_id: UUID):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An error occurred while fetching users"
         )
+
