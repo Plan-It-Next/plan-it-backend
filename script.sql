@@ -4,7 +4,9 @@ LOAD 'age';
 SET search_path = ag_catalog, "$user", public;
 
 -- Crear un nuevo grafo
+SELECT * FROM ag_catalog.drop_graph('el_grefo', true);
 SELECT create_graph('el_grefo');
+
 
 SELECT * FROM cypher('el_grefo', $$
 CREATE
