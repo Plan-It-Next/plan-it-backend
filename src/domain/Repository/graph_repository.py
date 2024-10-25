@@ -84,19 +84,83 @@ class GraphRepository:
         result = await conn.fetch(query)
         return result
 
-    async def maxSetFilterTrip:
-    '''
-        SELECT *
-                FROM cypher(
+    async def maxSetFilterTrip(self):
+        '''
+            SELECT *
+                    FROM cypher(
+                    'el_grefo',
+                    $$
+                    MATCH p = (nodo_inicio:Estacion)-[rel:RUTA*1..5]->(nodo_fin:Estacion)
+                    WHERE nodo_inicio.ciudad = 'Valencia' AND nodo_fin.ciudad = 'Madrid'
+                    UNWIND rel AS r
+                    WITH nodo_inicio, nodo_fin, p, SUM(r.distancia) AS total_distancia
+                    WHERE total_distancia <= 500
+                    RETURN p
+                    ORDER BY total_distancia ASC
+                    LIMIT 3
+                    $$
+            ) AS (camino agtype);
+            '''
+
+
+    async def customfilter(self, filter: TripFilter):
+        if not GraphRepository.initialized:
+            await self.first()
+        conn = await self.conn.get_conn()
+
+        consulta = """
+            SELECT *
+            FROM cypher(
                 'el_grefo',
                 $$
-                MATCH p = (nodo_inicio:Estacion)-[rel:RUTA*1..5]->(nodo_fin:Estacion) WHERE nodo_inicio.ciudad = 'Valencia' AND nodo_fin.ciudad = 'Madrid'
+                MATCH p = (nodo_inicio:Estacion)-[rel:RUTA*1..3]->(nodo_fin:Estacion)
+            """
+
+        # 2. Construimos el primer WHERE con los filtros de estaciones
+        condiciones_estaciones = []
+        if filter.ciudad_origen:
+            condiciones_estaciones.append(f"nodo_inicio.ciudad = '{filter.ciudad_origen}'")
+        if filter.ciudad_destino:
+            condiciones_estaciones.append(f"nodo_fin.ciudad = '{filter.ciudad_destino}'")
+        if filter.pais:
+            condiciones_estaciones.append(f"nodo_inicio.pais = '{filter.pais}'")
+        if filter.tipo_estacion:
+            condiciones_estaciones.append(f"nodo_inicio.tipo_estacion = '{filter.tipo_estacion}'")
+
+        # Si hay condiciones de estaciones, las añadimos al primer WHERE
+        if condiciones_estaciones:
+            consulta += " WHERE " + " AND ".join(condiciones_estaciones)
+
+        # 3. Agregamos el UNWIND y calculamos las sumas en WITH
+        consulta += """
                 UNWIND rel AS r
-                WITH nodo_inicio, nodo_fin, p, SUM(r.distancia) AS total_distancia
-                WHERE total_distancia <= 500
+                WITH nodo_inicio, nodo_fin, p,
+                     SUM(r.distancia) AS total_distancia,
+                     SUM(r.precio_billete) AS total_precio,
+                     SUM(r.duracion) AS total_duracion
+            """
+
+        # 4. Construimos el segundo WHERE con los filter de rutas
+        condiciones_rutas = []
+        if filter.precio_billete is not None:
+            condiciones_rutas.append(f"total_precio <= {filter.precio_billete}")
+        if filter.distancia is not None:
+            condiciones_rutas.append(f"total_distancia <= {filter.distancia}")
+        if filter.duracion is not None:
+            condiciones_rutas.append(f"total_duracion <= {filter.duracion}")
+
+        # Si hay condiciones de rutas, las añadimos al segundo WHERE
+        if condiciones_rutas:
+            consulta += " WHERE " + " AND ".join(condiciones_rutas)
+
+        # 5. Añadimos el RETURN, ORDER BY y LIMIT
+        consulta += """
                 RETURN p
                 ORDER BY total_distancia ASC
                 LIMIT 3
                 $$
-        ) AS (camino agtype);
-        '''
+            ) AS (camino agtype);
+            """
+        print(consulta)
+        result = await conn.fetch(consulta)
+        return result
