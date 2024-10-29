@@ -1,0 +1,659 @@
+{
+  "ruta": [
+    {
+      "ruta": {
+        "id": 1125899906842671,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 47,
+        "duracion": 0.5,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-19T17:00:00",
+        "fecha_hora_llegada": "2023-10-19T17:30:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842640,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131973,
+        "id_ruta": 16,
+        "duracion": 0.33,
+        "start_id": 844424930131972,
+        "distancia": 15,
+        "precio_billete": 5,
+        "fecha_hora_salida": "2023-10-17T12:00:00",
+        "fecha_hora_llegada": "2023-10-17T12:20:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842642,
+        "tipo": "avion",
+        "label": "RUTA",
+        "end_id": 844424930131979,
+        "id_ruta": 18,
+        "duracion": 1,
+        "start_id": 844424930131973,
+        "distancia": 500,
+        "precio_billete": 65,
+        "fecha_hora_salida": "2023-10-16T11:00:00",
+        "fecha_hora_llegada": "2023-10-16T12:00:00"
+      },
+      "origen": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      },
+      "destino": {
+        "id": 844424930131979,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Sevilla",
+        "nombre": "Aeropuerto San Pablo",
+        "latitud": 37.42,
+        "longitud": -5.8989,
+        "id_estacion": 11
+      }
+    }
+  ],
+  "precio_total": 71.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "ruta": {
+        "id": 1125899906842644,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 20,
+        "duracion": 0.33,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-15T08:30:00",
+        "fecha_hora_llegada": "2023-10-15T08:50:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842640,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131973,
+        "id_ruta": 16,
+        "duracion": 0.33,
+        "start_id": 844424930131972,
+        "distancia": 15,
+        "precio_billete": 5,
+        "fecha_hora_salida": "2023-10-17T12:00:00",
+        "fecha_hora_llegada": "2023-10-17T12:20:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842642,
+        "tipo": "avion",
+        "label": "RUTA",
+        "end_id": 844424930131979,
+        "id_ruta": 18,
+        "duracion": 1,
+        "start_id": 844424930131973,
+        "distancia": 500,
+        "precio_billete": 65,
+        "fecha_hora_salida": "2023-10-16T11:00:00",
+        "fecha_hora_llegada": "2023-10-16T12:00:00"
+      },
+      "origen": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      },
+      "destino": {
+        "id": 844424930131979,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Sevilla",
+        "nombre": "Aeropuerto San Pablo",
+        "latitud": 37.42,
+        "longitud": -5.8989,
+        "id_estacion": 11
+      }
+    }
+  ],
+  "precio_total": 71.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "ruta": {
+        "id": 1125899906842671,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 47,
+        "duracion": 0.5,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-19T17:00:00",
+        "fecha_hora_llegada": "2023-10-19T17:30:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842640,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131973,
+        "id_ruta": 16,
+        "duracion": 0.33,
+        "start_id": 844424930131972,
+        "distancia": 15,
+        "precio_billete": 5,
+        "fecha_hora_salida": "2023-10-17T12:00:00",
+        "fecha_hora_llegada": "2023-10-17T12:20:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842658,
+        "tipo": "avion",
+        "label": "RUTA",
+        "end_id": 844424930131979,
+        "id_ruta": 34,
+        "duracion": 1,
+        "start_id": 844424930131973,
+        "distancia": 500,
+        "precio_billete": 70,
+        "fecha_hora_salida": "2023-10-18T12:00:00",
+        "fecha_hora_llegada": "2023-10-18T13:00:00"
+      },
+      "origen": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      },
+      "destino": {
+        "id": 844424930131979,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Sevilla",
+        "nombre": "Aeropuerto San Pablo",
+        "latitud": 37.42,
+        "longitud": -5.8989,
+        "id_estacion": 11
+      }
+    }
+  ],
+  "precio_total": 76.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "ruta": {
+        "id": 1125899906842644,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 20,
+        "duracion": 0.33,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-15T08:30:00",
+        "fecha_hora_llegada": "2023-10-15T08:50:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842640,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131973,
+        "id_ruta": 16,
+        "duracion": 0.33,
+        "start_id": 844424930131972,
+        "distancia": 15,
+        "precio_billete": 5,
+        "fecha_hora_salida": "2023-10-17T12:00:00",
+        "fecha_hora_llegada": "2023-10-17T12:20:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842658,
+        "tipo": "avion",
+        "label": "RUTA",
+        "end_id": 844424930131979,
+        "id_ruta": 34,
+        "duracion": 1,
+        "start_id": 844424930131973,
+        "distancia": 500,
+        "precio_billete": 70,
+        "fecha_hora_salida": "2023-10-18T12:00:00",
+        "fecha_hora_llegada": "2023-10-18T13:00:00"
+      },
+      "origen": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      },
+      "destino": {
+        "id": 844424930131979,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Sevilla",
+        "nombre": "Aeropuerto San Pablo",
+        "latitud": 37.42,
+        "longitud": -5.8989,
+        "id_estacion": 11
+      }
+    }
+  ],
+  "precio_total": 76.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "ruta": {
+        "id": 1125899906842671,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 47,
+        "duracion": 0.5,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-19T17:00:00",
+        "fecha_hora_llegada": "2023-10-19T17:30:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842662,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131974,
+        "id_ruta": 38,
+        "duracion": 1,
+        "start_id": 844424930131972,
+        "distancia": 100,
+        "precio_billete": 10,
+        "fecha_hora_salida": "2023-10-19T08:00:00",
+        "fecha_hora_llegada": "2023-10-19T09:00:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842644,
+        "tipo": "metro",
+        "label": "RUTA",
+        "end_id": 844424930131972,
+        "id_ruta": 20,
+        "duracion": 0.33,
+        "start_id": 844424930131974,
+        "distancia": 5,
+        "precio_billete": 1.5,
+        "fecha_hora_salida": "2023-10-15T08:30:00",
+        "fecha_hora_llegada": "2023-10-15T08:50:00"
+      },
+      "origen": {
+        "id": 844424930131974,
+        "pais": "España",
+        "tipo": "metro",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Metro Diagonal",
+        "latitud": 41.3922,
+        "longitud": 2.165,
+        "id_estacion": 6
+      },
+      "destino": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842640,
+        "tipo": "tren",
+        "label": "RUTA",
+        "end_id": 844424930131973,
+        "id_ruta": 16,
+        "duracion": 0.33,
+        "start_id": 844424930131972,
+        "distancia": 15,
+        "precio_billete": 5,
+        "fecha_hora_salida": "2023-10-17T12:00:00",
+        "fecha_hora_llegada": "2023-10-17T12:20:00"
+      },
+      "origen": {
+        "id": 844424930131972,
+        "pais": "España",
+        "tipo": "tren",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Estacion Sants",
+        "latitud": 41.3809,
+        "longitud": 2.14,
+        "id_estacion": 4
+      },
+      "destino": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      }
+    },
+    {
+      "ruta": {
+        "id": 1125899906842642,
+        "tipo": "avion",
+        "label": "RUTA",
+        "end_id": 844424930131979,
+        "id_ruta": 18,
+        "duracion": 1,
+        "start_id": 844424930131973,
+        "distancia": 500,
+        "precio_billete": 65,
+        "fecha_hora_salida": "2023-10-16T11:00:00",
+        "fecha_hora_llegada": "2023-10-16T12:00:00"
+      },
+      "origen": {
+        "id": 844424930131973,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Barcelona",
+        "nombre": "Aeropuerto El Prat",
+        "latitud": 41.2974,
+        "longitud": 2.0833,
+        "id_estacion": 5
+      },
+      "destino": {
+        "id": 844424930131979,
+        "pais": "España",
+        "tipo": "avion",
+        "label": "Estacion",
+        "ciudad": "Sevilla",
+        "nombre": "Aeropuerto San Pablo",
+        "latitud": 37.42,
+        "longitud": -5.8989,
+        "id_estacion": 11
+      }
+    }
+  ],
+  "precio_total": 83.0,
+  "distancia_total": 625
+}

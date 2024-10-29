@@ -1,0 +1,90 @@
+{
+  "ruta": [
+    {
+      "desde": 6,
+      "hasta": 4,
+      "precio": 1.5,
+      "distancia": 5,
+      "estacion_desde": "Metro Diagonal",
+      "estacion_hasta": "Estacion Sants"
+    },
+    {
+      "desde": 4,
+      "hasta": 5,
+      "precio": 5,
+      "distancia": 15,
+      "estacion_desde": "Estacion Sants",
+      "estacion_hasta": "Aeropuerto El Prat"
+    },
+    {
+      "desde": 5,
+      "hasta": 11,
+      "precio": 65,
+      "distancia": 500,
+      "estacion_desde": "Aeropuerto El Prat",
+      "estacion_hasta": "Aeropuerto San Pablo"
+    }
+  ],
+  "precio_total": 71.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "desde": 6,
+      "hasta": 4,
+      "precio": 1.5,
+      "distancia": 5,
+      "estacion_desde": "Metro Diagonal",
+      "estacion_hasta": "Estacion Sants"
+    },
+    {
+      "desde": 4,
+      "hasta": 5,
+      "precio": 5,
+      "distancia": 15,
+      "estacion_desde": "Estacion Sants",
+      "estacion_hasta": "Aeropuerto El Prat"
+    },
+    {
+      "desde": 5,
+      "hasta": 11,
+      "precio": 65,
+      "distancia": 500,
+      "estacion_desde": "Aeropuerto El Prat",
+      "estacion_hasta": "Aeropuerto San Pablo"
+    }
+  ],
+  "precio_total": 71.5,
+  "distancia_total": 520
+}
+{
+  "ruta": [
+    {
+      "desde": 6,
+      "hasta": 4,
+      "precio": 1.5,
+      "distancia": 5,
+      "estacion_desde": "Metro Diagonal",
+      "estacion_hasta": "Estacion Sants"
+    },
+    {
+      "desde": 4,
+      "hasta": 5,
+      "precio": 5,
+      "distancia": 15,
+      "estacion_desde": "Estacion Sants",
+      "estacion_hasta": "Aeropuerto El Prat"
+    },
+    {
+      "desde": 5,
+      "hasta": 11,
+      "precio": 70,
+      "distancia": 500,
+      "estacion_desde": "Aeropuerto El Prat",
+      "estacion_hasta": "Aeropuerto San Pablo"
+    }
+  ],
+  "precio_total": 76.5,
+  "distancia_total": 520
+}
