@@ -12,7 +12,8 @@ class AuthMiddleware:
 
     def is_valid_token(self, token: str):
         try:
-            return jwt.decode(token, self.secret, algorithms=["HS256"], options={"verify_aud": False, "verify_iat": False})
+            token = jwt.decode(token, self.secret, algorithms=["HS256"], options={"verify_aud": False, "verify_iat": False})
+            return token['sub']
         except Exception as e:
             print(str(e))
             return None  # Retorna None si el token no es válido
