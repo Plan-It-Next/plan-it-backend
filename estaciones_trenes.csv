@@ -1,0 +1,645 @@
+stop_name,stop_lat,stop_lon,ciudad,país
+Estación de tren Madrid-Chamartin,40.4720993,-3.6824687,Madrid,ES
+Estación de tren Badajoz,38.890696,-6.981753,Badajoz,ES
+Estación de tren Montijo,38.913539,-6.598577,Montijo,ES
+Estación de tren Merida,38.921503,-6.343794,Merida,ES
+Estación de tren Caceres,39.461131,-6.385679,Cáceres,ES
+Estación de tren Monfrague,39.937464,-6.10091,Malpartida De Plasencia,ES
+Estación de tren Navalmoral de La Mata,39.894913,-5.545607,Navalmoral de la Mata,ES
+Estación de tren Oropesa de Toledo,39.921746,-5.186137,Oropesa,ES
+Estación de tren Talavera de La Reina,39.970674,-4.826512,Talavera de la Reina,ES
+Estación de tren Torrijos,39.979003,-4.283037,Torrijos,ES
+Estación de tren Leganes,40.3286349,-3.7711552,Leganés,ES
+Estación de tren Almeria,36.834951,-2.455519,Almeria,ES
+Estación de tren Guadix,37.316873,-3.127209,Guadix,ES
+Estación de tren Cabra del Santo Cristo Y Alicun,37.6567129,-3.262623,Cabra del Santo Cristo,ES
+Estación de tren Jodar-Ubeda,37.913343,-3.34892,Úbeda,ES
+Estación de tren Linares-Baeza,38.068864,-3.589396,Linares,ES
+Estación de tren Alcazar de San Juan,39.395628,-3.205744,Alcázar de San Juan,ES
+Estación de tren Vilches,38.215742,-3.517576,Vilches,ES
+Estación de tren Moreda,37.431216,-3.310516,Morelábor,ES
+Estación de tren Finyana,37.184647,-2.839757,Fiñana,ES
+Estación de tren Gador,36.951624,-2.487658,Gádor,ES
+Estación de tren Miranda de Ebro,42.691024,-2.940366,Miranda de Ebro,ES
+Estación de tren Bilbao-Abando Indalecio Prieto,43.259609,-2.92915,Bilbao,ES
+Estación de tren Llodio,43.142721,-2.959916,Plaza,ES
+Estación de tren San Sebastian/donostia,43.317669,-1.976704,San Sebastián,ES
+Estación de tren Vitoria/gasteiz,42.841517,-2.672601,Vitoria-Gasteiz,ES
+Estación de tren Altsasu/alsasua-Estacion,42.894847,-2.181237,Altsasu/Alsasua,ES
+Estación de tren Zumarraga,43.088273,-2.318462,Zumarraga,ES
+Estación de tren Vigo Guixar,42.2392656,-8.7146089,Vigo,ES
+Estación de tren Porto Campanha,41.1489,-8.58544,Porto,ES
+Estación de tren Nine,41.45534,-8.54513,Vila Nova de Famalicão,ES
+Estación de tren Viana D Castelo,41.69517,-8.83134,Viana do Castelo,ES
+Estación de tren Valenca Do Minho,42.024734,-8.639745,Valença,ES
+Estación de tren Barcelona-Sants,41.37922,2.140624,Barcelona,ES
+Estación de tren Camp Tarragona,41.192066,1.272666,la Secuita,ES
+Estación de tren Lleida,41.620696,0.632669,Lérida,ES
+Estación de tren Zaragoza-Delicias,41.658649,-0.911615,Zaragoza,ES
+Estación de tren Tudela de Navarra,42.059434,-1.597931,Tudela,ES
+Estación de tren Castejon de Ebro,42.172719,-1.692114,Castejón,ES
+Estación de tren Calahorra,42.310458,-1.957755,Calahorra,ES
+Estación de tren Logronyo,42.457459,-2.442193,Logroño,ES
+Estación de tren Haro,42.583635,-2.849396,Haro,ES
+Estación de tren Valencia-Estacio del Nord,39.4669346,-0.3771842,Valencia,ES
+Estación de tren Laldea-Amposta-Tortosa,40.753542,0.614314,l'Aldea,ES
+Estación de tren Vinaros,40.471682,0.455727,Vinaròs,ES
+Estación de tren Benicarlo-Penyiscola,40.427639,0.415217,Benicarló,ES
+Estación de tren Castello,39.9882552,-0.0524126,Castellón de la Plana,ES
+Estación de tren Pamplona/irunya,42.824877,-1.661419,Pamplona,ES
+Estación de tren Tafalla,42.525756,-1.671467,Tafalla,ES
+Estación de tren Lugo,43.015222,-7.552176,Lugo,ES
+Estación de tren Ourense,42.350389,-7.872777,Ourense,ES
+Estación de tren Monforte de Lemos,42.529682,-7.503589,Monforte de Lemos,ES
+Estación de tren Sarria,42.784049,-7.418822,Sarria,ES
+Estación de tren Guadalajara - Yebes,40.587315,-3.124301,Valdeluz,ES
+Estación de tren Calatayud,41.346692,-1.63868,Calatayud,ES
+Estación de tren Burgos-Rosa Manzano,42.371197,-3.666308,Burgos,ES
+Estación de tren Palencia,42.015711,-4.534135,Palencia,ES
+Estación de tren Leon,42.596048,-5.582428,León,ES
+Estación de tren Astorga,42.459489,-6.047212,Astorga,ES
+Estación de tren Bembibre,42.609558,-6.422048,Bembibre,ES
+Estación de tren Ponferrada,42.545429,-6.602376,Compostilla,ES
+Estación de tren O Barco de Valdeorras,42.418301,-6.98503,O Barco,ES
+Estación de tren A Rua-Petin,42.39276,-7.113284,A Rúa,ES
+Estación de tren San Clodio-Quiroga,42.465271,-7.287198,San Clodio,ES
+Estación de tren Guillarei,42.065663,-8.62253,Tui,ES
+Estación de tren Redondela,42.286005,-8.619402,Redondela,ES
+Estación de tren O Porrinyo,42.16419,-8.62202,O Porriño,ES
+Estación de tren A Corunya,43.3496932,-8.4155629,A Coruña,ES
+Estación de tren Santiago de Compostela,42.870842,-8.544697,Santiago de Compostela,ES
+Estación de tren Salamanca,40.972235,-5.64899,Salamanca,ES
+Estación de tren Valladolid,41.642167,-4.726986,Valladolid,ES
+Estación de tren Medina del Campo,41.317617,-4.909923,Medina del Campo,ES
+Estación de tren Cadiz,36.5290083,-6.2882055,Cádiz,ES
+Estación de tren CAMBRILS,41.081648,1.046055,Cambrils,ES
+Estación de tren Xativa,38.9920972,-0.5244888,Xàtiva,ES
+Estación de tren Albacete-Los Llanos,38.999384,-1.84845,Albacete,ES
+Estación de tren Villarrobledo,39.260868,-2.598621,Villarrobledo,ES
+Estación de tren Socuellamos,39.278776,-2.775571,Socuéllamos,ES
+Estación de tren Manzanares,39.005837,-3.370507,Manzanares,ES
+Estación de tren Valdepenyas,38.762868,-3.39572,Valdepeñas,ES
+Estación de tren Espeluy,38.010247,-3.832726,Espeluy,ES
+Estación de tren Andujar,38.028225,-4.066036,Andújar,ES
+Estación de tren Cordoba,37.888291,-4.789453,Córdoba,ES
+Estación de tren Sevilla-Santa Justa,37.3921277,-5.9752694,Sevilla,ES
+Estación de tren Jerez de La Frontera,36.680029,-6.1264716,Jerez de la Frontera,ES
+Estación de tren Puerto de Santa Maria,36.6037962,-6.2171641,El Puerto de Santa María,ES
+Estación de tren San Fernando-Bahia Sur,36.4680361,-6.2067638,San Fernando,ES
+Estación de tren Rincon de Soto,42.230011,-1.847473,Rincón de Soto,ES
+Estación de tren Alfaro,42.186525,-1.747985,Alfaro,ES
+Estación de tren Alicante/alacant,38.34445,-0.4950527,Alicante,ES
+Estación de tren Figueres Vilafant,42.264771,2.943547,Figueres,ES
+Estación de tren Girona,41.979303,2.817006,Gerona,ES
+Estación de tren Sagunt/sagunto,39.6756611,-0.2715972,Sagunto,ES
+Estación de tren Benicassim,40.0579451,0.0577646,Benicàssim / Benicasim,ES
+Estación de tren Orpesa,40.092258,0.139861,Orpesa / Oropesa del Mar,ES
+Estación de tren Tarragona,41.111624,1.253214,Tarragona,ES
+Estación de tren Elda-Petrer,38.484879,-0.80109,Elda,ES
+Estación de tren Villena,38.631738,-0.867689,Villena,ES
+Estación de tren Cartagena,37.604967,-0.975122,Cartagena,ES
+Estación de tren Elche Parque/elx Parc,38.2717784,-0.6952109,Elche,ES
+Estación de tren Orihuela-Miguel Hernandez,38.0779194,-0.94445,Orihuela,ES
+Estación de tren Torre-Pacheco,37.746905,-0.967078,Torre Pacheco,ES
+Estación de tren Murcia,37.97465,-1.1299555,Murcia,ES
+Estación de tren Lorca Sutullena,37.6725714,-1.6959002,Lorca,ES
+Estación de tren Alhama de Murcia,37.8493837,-1.4145055,Alhama de Murcia,ES
+Estación de tren Totana,37.7635101,-1.4956127,Totana,ES
+Estación de tren Ciudad Real,38.9853,-3.913633,Ciudad Real,ES
+Estación de tren Puertollano,38.69128,-4.111655,Puertollano,ES
+Estación de tren Malaga Maria Zambrano,36.7113388,-4.4313888,Málaga,ES
+Estación de tren Antequera-Santa Ana,37.069881,-4.719014,Antequera,ES
+Estación de tren Puente Genil-Herrera,37.3579,-4.821638,Puente Genil,ES
+Estación de tren Villanueva de Cordoba-Los Pedroches,38.2554049,-4.570952,Villanueva de Córdoba,ES
+Estación de tren Granada,37.184038,-3.609154,Granada,ES
+Estación de tren Loja,37.175372,-4.134841,Loja,ES
+Estación de tren Huelva,37.253079,-6.950971,Huelva,ES
+Estación de tren La Palma del Condado,37.390665,-6.554444,La Palma del Condado,ES
+Estación de tren Huesca,42.133594,-0.409745,Huesca,ES
+Estación de tren Tardienta,41.975716,-0.538223,Tardienta,ES
+Estación de tren ELX AV,38.24551,-0.76675,Elx / Elche,ES
+Estación de tren Cuenca Fernando Zobel,40.035192,-2.14441,Cuenca,ES
+Estación de tren Zamora,41.515892,-5.739675,Zamora,ES
+Estación de tren Tolosa,43.1354047,-2.0789084,Amorots-Succos,ES
+Estación de tren Gijon,43.535175,-5.698318,Gijón,ES
+Estación de tren Oviedo,43.366841,-5.854263,Oviedo,ES
+Estación de tren Ferrol,43.4880349,-8.231143,Ferrol,ES
+Estación de tren Segovia Guiomar,40.910577,-4.094564,Segovia,ES
+Estación de tren PUEBLA DE SANABRIA LLEGADA,42.045763,-6.626848,Puebla de Sanabria,ES
+Estación de tren A GUDIÑA-PORTA DE GALICIA,42.0606439,-7.132532,A Gudiña,ES
+Estación de tren Betanzos-Infesta,43.270698,-8.225847,Betanzos,ES
+Estación de tren Pontedeume,43.411797,-8.180416,Pontedeume,ES
+Estación de tren Pola de Lena,43.158942,-5.831075,Lena,ES
+Estación de tren Santander,43.458575,-3.811223,Santander,ES
+Estación de tren Aguilar de Campoo,42.785362,-4.233899,Aguilar de Campoo,ES
+Estación de tren Torrelavega,43.33974,-4.02896,Sierrapando,ES
+Estación de tren Reinosa,42.995158,-4.139917,Reinosa,ES
+Estación de tren Mieres-Puente,43.250027,-5.78028,Uxo,ES
+Estación de tren Irun,43.339582,-1.800192,Irun,ES
+Estación de tren Veguellina,42.4335,-5.88756,Villarejo de Órbigo,ES
+Estación de tren Branyuelas,42.632631,-6.201002,Villagatón,ES
+Estación de tren Aviles,43.561191,-5.922576,Avilés,ES
+Estación de tren Pontevedra,42.421969,-8.635546,Pontevedra,ES
+Estación de tren Vilagarcia de Arousa,42.602189,-8.762523,Vilagarcía de Arousa,ES
+Estación de tren San Miguel de Las Duenyas,42.586392,-6.523776,San Miguel de las Dueñas,ES
+Estación de tren Torre del Bierzo,42.595578,-6.329083,Torre del Bierzo,ES
+Estación de tren Vega-Magaz,42.55376,-6.068267,Magaz de Cepeda,ES
+Estación de tren Requena Utiel,39.519834,-1.127601,Requena,ES
+Estación de tren Gandia,38.9702805,-0.1797722,Gandia,ES
+Estación de tren Cullera,39.1778305,-0.2632361,Cullera,ES
+Estación de tren Toledo,39.862272,-4.011244,Toledo,ES
+Estación de tren CALLOSA DE SEGURA - COX,38.1227708,-0.8745727,Callosa de Segura,ES
+Estación de tren Beniel,38.0447361,-0.9994472,Beniel,ES
+Estación de tren Cerceda-Meirama,43.2078791,-8.4467723,Cerceda,ES
+Estación de tren Padron-Barbanza,42.738967,-8.652614,Padrón,ES
+Estación de tren Arcade,42.340549,-8.611178,Arcade,ES
+Estación de tren Algeciras,36.126831,-5.451108,Algeciras,ES
+Estación de tren Ronda,36.748401,-5.16197,Ronda,ES
+Estación de tren San Roque-La Linea,36.214482,-5.432399,San Roque,ES
+Estación de tren Marseille St Charles,43.30349,5.382236,Marseille,ES
+Estación de tren Aix en Provence,43.455268,5.31723,Aix-en-Provence,ES
+Estación de tren Avignon,43.921938,4.785813,Avignon,ES
+Estación de tren NIMES,43.832291,4.365845,Nîmes,ES
+Estación de tren Montpellier,43.604852,3.880491,Montpellier,ES
+Estación de tren Narbonne,43.190253,3.005716,Narbonne,ES
+Estación de tren Perpignan,42.696421,2.880381,Perpignan,ES
+Estación de tren Lyon Part Dieu,45.760281,4.859801,Lyon,ES
+Estación de tren Valence,44.991545,4.978703,Alixan,ES
+Estación de tren Archena-Fortuna,38.13132,-1.236037,Molina de Segura,ES
+Estación de tren Cieza,38.246609,-1.421702,Cieza,ES
+Estación de tren Hellin,38.508776,-1.688437,Hellín,ES
+Estación de tren Cabezon del Pisuerga,41.737276,-4.651294,Cabezón de Pisuerga,ES
+Estación de tren Corcos-Aguilarejo,41.766446,-4.623485,Corcos,ES
+Estación de tren Cubillas de Santa Marta,41.808861,-4.579754,Cubillas de Santa Marta,ES
+Estación de tren Duenyas,41.87048,-4.541216,Dueñas,ES
+Estación de tren Venta de Banyos,41.91736,-4.495844,Venta de Baños,ES
+Estación de tren Grijota,42.049225,-4.583954,Grijota,ES
+Estación de tren Becerril,42.104706,-4.64712,Becerril de Campos,ES
+Estación de tren Paredes de Nava,42.150694,-4.697599,Paredes de Nava,ES
+Estación de tren Villada,42.245238,-4.970589,Villada,ES
+Estación de tren Grajal,42.323246,-5.013381,Grajal de Campos,ES
+Estación de tren Sahagun,42.369329,-5.022667,Sahagún,ES
+Estación de tren El Burgo Ranero,42.425753,-5.208592,El Burgo Ranero,ES
+Estación de tren Palanquinos,42.460716,-5.497584,Villanueva De Las Manzanas,ES
+Estación de tren La Robla,42.804454,-5.626255,La Robla,ES
+Estación de tren La Pola de Gordon,42.854099,-5.674524,La Pola de Gordón,ES
+Estación de tren Santa Lucia,42.87515,-5.639613,Santa Lucía de Gordón,ES
+Estación de tren Villamanin,42.93671,-5.657637,Villamanín,ES
+Estación de tren Campomanes,43.11112,-5.814196,Campumanes,ES
+Estación de tren Catoira,42.672166,-8.725291,Catoira,ES
+Estación de tren Pontecesures,42.722985,-8.65213,Infesta,ES
+Estación de tren Ordes,43.037544,-8.448447,Ordes,ES
+Estación de tren Uxes,43.297374,-8.444404,Arteixo,ES
+Estación de tren Portela,42.517801,-8.654609,Santo Antoniño,ES
+Estación de tren Osebe,42.825298,-8.61584,Ames,ES
+Estación de tren Quintana-Raneros,42.550085,-5.637789,Santovenia de la Valdoncina,ES
+Estación de tren Villavante,42.46458,-5.838914,Santa Marina del Rey,ES
+Estación de tren Barrientos,42.414301,-5.963988,Valderrey,ES
+Estación de tren Nistal,42.424462,-6.00803,San Justo de la Vega,ES
+Estación de tren Montefurado,42.39402,-7.1984,Quiroga,ES
+Estación de tren Vilamartin de Valdeorras,42.411829,-7.061185,Vilamartín de Valdeorras,ES
+Estación de tren Sobradelo,42.414859,-6.911951,Sobradelo,ES
+Estación de tren Querenyo,42.420704,-6.829486,Rubiá,ES
+Estación de tren Toral de Los Vados,42.541052,-6.776703,Toral de los Vados,ES
+Estación de tren Villadepalos,42.53686,-6.751109,Villadepalos,ES
+Estación de tren Barra de Minyo,42.401095,-7.802567,Coles,ES
+Estación de tren Os Peares,42.451439,-7.735523,A Peroxa,ES
+Estación de tren San Pedro Do Sil,42.441353,-7.70412,Nogueira de Ramuín,ES
+Estación de tren San Estevo Do Sil,42.426921,-7.661676,Sober,ES
+Estación de tren Salvaterra de Minyo,42.08164,-8.495141,Salvaterra de Miño,ES
+Estación de tren As Neves,42.075462,-8.420074,As Neves,ES
+Estación de tren Sela,42.092092,-8.355998,Arbo,ES
+Estación de tren Arbo,42.107058,-8.300247,O Pazo,ES
+Estación de tren Pousa-Crecente,42.136705,-8.234889,Crecente,ES
+Estación de tren Ribadavia,42.2931,-8.139261,Ribadavia,ES
+Estación de tren O Burgo Santiago,43.317841,-8.36875,Culleredo,ES
+Estación de tren Cambre,43.290502,-8.352104,Cambre,ES
+Estación de tren Oza Dos Rios,43.21877,-8.187111,Oza,ES
+Estación de tren Cesuras,43.173073,-8.2005,Oza-Cesuras,ES
+Estación de tren Curtis,43.127232,-8.143155,Curtis,ES
+Estación de tren Guitiriz,43.179058,-7.895039,Guitiriz,ES
+Estación de tren Baamonde,43.173405,-7.756128,Begonte,ES
+Estación de tren Rabade,43.121378,-7.624835,Rábade,ES
+Estación de tren Perlio,43.472309,-8.174837,Fene,ES
+Estación de tren Cabanas-Areal,43.415585,-8.168828,Cabanas,ES
+Estación de tren Perbes,43.378197,-8.201106,Miño,ES
+Estación de tren Minyo,43.349431,-8.207313,Oseiro,ES
+Estación de tren Neda,43.495351,-8.160967,Neda,ES
+Estación de tren Lalin,42.63253,-8.142715,Lalín,ES
+Estación de tren O Irixo,42.519719,-8.105174,O Irixo,ES
+Estación de tren O Carballinyo,42.43134,-8.068874,O Carballiño,ES
+Estación de tren A Friela-Maside,42.411401,-8.028967,Maside,ES
+Estación de tren Puerto Real,36.5309277,-6.1861944,Puerto Real,ES
+Estación de tren Lebrija,36.9299735,-6.0864165,Lebrija,ES
+Estación de tren Utrera,37.1845444,-5.7907966,Utrera,ES
+Estación de tren Dos Hermanas,37.2872,-5.9235192,Dos Hermanas,ES
+Estación de tren Jaen,37.779827,-3.790798,Jaén,ES
+Estación de tren Villa del Rio,37.981331,-4.283788,Villa del Río,ES
+Estación de tren Posadas,37.803986,-5.106325,Posadas,ES
+Estación de tren Palma del Rio,37.718081,-5.29276,Palma del Río,ES
+Estación de tren Penyaflor,37.707502,-5.341609,Peñaflor,ES
+Estación de tren Lora del Rio,37.6613027,-5.5295472,Lora del Río,ES
+Estación de tren Las Cabezas de San Juan,37.0193453,-5.9465554,Las Cabezas de San Juan,ES
+Estación de tren San Juan del Puerto,37.311898,-6.841076,San Juan del Puerto,ES
+Estación de tren Niebla,37.3587619,-6.6812578,Niebla,ES
+Estación de tren Escacena,37.397812,-6.39198,Escacena del Campo,ES
+Estación de tren Carrion de Los Cespedes,37.368955,-6.335088,Carrión de los Céspedes,ES
+Estación de tren Benacazon,37.3567611,-6.2082805,Benacazón,ES
+Estación de tren Villarrasa,37.386999,-6.598819,Villarrasa,ES
+Estación de tren Osuna,37.233899,-5.115026,Osuna,ES
+Estación de tren Arahal,37.268081,-5.548514,Arahal,ES
+Estación de tren Marchena,37.334282,-5.425519,Marchena,ES
+Estación de tren Jimena de La Frontera,36.4242,-5.434113,Los Ángeles,ES
+Estación de tren Gaucin,36.540372,-5.386825,Cortes de la Frontera,ES
+Estación de tren Jimera de Libar,36.660678,-5.281473,Jimera de Líbar,ES
+Estación de tren Benaojan-Montejaque,36.713753,-5.246366,Benaoján,ES
+Estación de tren Almargen-Canyete La Real,37.000985,-5.020111,Almargen,ES
+Estación de tren Campillos,37.032231,-4.863499,Campillos,ES
+Estación de tren Los Barrios,36.173998,-5.460801,Los Barrios,ES
+Estación de tren Almoraima,36.27751,-5.430529,Castellar de la Frontera,ES
+Estación de tren San Pablo,36.467952,-5.418921,San Pablo de Buceite,ES
+Estación de tren Arriate,36.7905949,-5.140757,Arriate,ES
+Estación de tren Setenil,36.863423,-5.121375,Setenil de las Bodegas,ES
+Estación de tren Jabugo-Galaroza,37.928243,-6.773908,Jabugo,ES
+Estación de tren Gibraleon,37.36852,-6.96207,Gibraleón,ES
+Estación de tren Calanyas,37.652007,-6.875841,Calañas,ES
+Estación de tren El Tamujoso,37.720339,-6.900554,El Cerro de Andévalo,ES
+Estación de tren Valdelamusa,37.787111,-6.873729,Cortegana,ES
+Estación de tren Almonaster-Cortegana,37.901174,-6.797372,Almonaster la Real,ES
+Estación de tren Zafra,38.413635,-6.405083,Zafra,ES
+Estación de tren Cumbres Mayores,38.053126,-6.631553,Cumbres Mayores,ES
+Estación de tren Fregenal de La Sierra,38.167613,-6.637909,Fregenal de la Sierra,ES
+Estación de tren El Chorro,36.907335,-4.759258,Álora,ES
+Estación de tren Cartama,36.7337555,-4.608232,Estación de Cártama,ES
+Estación de tren Aljaima,36.7331166,-4.6644194,Cártama,ES
+Estación de tren Pizarra,36.7640611,-4.7116694,Pizarra,ES
+Estación de tren Alora,36.819825,-4.6994424,El Puente,ES
+Estación de tren Gergal,37.108847,-2.591556,Gérgal,ES
+Estación de tren Benalua de Guadix,37.345277,-3.163177,Benalúa,ES
+Estación de tren Iznalloz,37.395852,-3.527947,Iznalloz,ES
+Estación de tren Huercal-Viator,36.885155,-2.436718,Huércal de Almería,ES
+Estación de tren Sant Vicent Centre,38.3972495,-0.5326435,Sant Vicent del Raspeig / San Vicente del Raspeig,ES
+Estación de tren Tortosa,40.807339,0.522937,Tortosa,ES
+Estación de tren Vila-Real,39.9330222,-0.0967722,Vila-real,ES
+Estación de tren Torreblanca,40.212211,0.198779,Torreblanca,ES
+Estación de tren Alcala de Xivert,40.30469,0.228717,Alcalà de Xivert,ES
+Estación de tren Ulldecona -Alcanar-La Senia,40.595924,0.44927,Ulldecona,ES
+Estación de tren Almassora/almazora,39.9548444,-0.0767722,Almazora/Almassora,ES
+Estación de tren Burriana-Alquerias Ninyo Perdido,39.8964287,-0.1038666,Les Alqueries,ES
+Estación de tren Nules-La Vilavella,39.8531222,-0.1527555,Nules,ES
+Estación de tren Chilches,39.7825944,-0.1903333,Xilxes / Chilches,ES
+Estación de tren Almenara,39.7487555,-0.2183805,Almenara,ES
+Estación de tren Pucol,39.6171903,-0.3048578,Puçol,ES
+Estación de tren El Puig,39.5882111,-0.3116472,el Puig de Santa Maria,ES
+Estación de tren Albuixech,39.5433,-0.3205777,Albuixech,ES
+Estación de tren Almansa,38.867822,-1.105446,Almansa,ES
+Estación de tren Silla,39.3617388,-0.4149472,Silla,ES
+Estación de tren Alcoy/alcoi,38.709349,-0.470247,Alcoi / Alcoy,ES
+Estación de tren Genoves,38.98773,-0.47988,Genovés,ES
+Estación de tren Beniganim,38.938499,-0.453424,Benigànim,ES
+Estación de tren La Pobla del Duc,38.907606,-0.453386,la Pobla del Duc,ES
+Estación de tren Montaverner,38.884135,-0.491619,Montaverner,ES
+Estación de tren Bufali,38.867405,-0.510478,Bufali,ES
+Estación de tren Albaida,38.845645,-0.518129,Albaida,ES
+Estación de tren Agullent,38.830569,-0.551183,Agullent,ES
+Estación de tren Ontinyent,38.809692,-0.602457,Ontinyent,ES
+Estación de tren Agres,38.796829,-0.521744,Agres,ES
+Estación de tren Cocentaina,38.740618,-0.446789,Cocentaina,ES
+Estación de tren Alfafar-Benetusser,39.4223277,-0.3926,Alfafar,ES
+Estación de tren Massanassa,39.4091638,-0.3953194,Massanassa,ES
+Estación de tren Catarroja,39.3999611,-0.3991916,Catarroja,ES
+Estación de tren Benifaio-Almussafes,39.2842194,-0.42995,Benifaió,ES
+Estación de tren Algemesi,39.1931111,-0.4409083,Algemesí,ES
+Estación de tren Alzira,39.1531194,-0.4506,Alzira,ES
+Estación de tren Carcaixent,39.1204694,-0.4543833,Carcaixent,ES
+Estación de tren La Pobla Llarga,39.083475,-0.4697027,La Pobla Llarga,ES
+Estación de tren L.enova Manuel,39.0501935,-0.4778516,l'Énova,ES
+Estación de tren Roca-Cuper,39.5261277,-0.3237777,Meliana,ES
+Estación de tren La Llosa,39.7680118,-0.2030695,la Llosa,ES
+Estación de tren Massalfassar-Albuixech,39.5556333,-0.3182861,Massalfassar,ES
+Estación de tren Novelda-Aspe,38.407086,-0.777744,Novelda,ES
+Estación de tren Sax,38.544251,-0.813729,Sax,ES
+Estación de tren Sant Celoni,41.686024,2.491262,Sant Celoni,ES
+Estación de tren Macanet-Massanes,41.778657,2.678775,Riudarenes,ES
+Estación de tren Sils,41.807683,2.74486,Sils,ES
+Estación de tren Caldes de Malavella,41.841098,2.800765,Caldes de Malavella,ES
+Estación de tren Flaca,42.047596,2.957506,Flaçà,ES
+Estación de tren Quinto,41.419528,-0.490673,Quinto,ES
+Estación de tren La Zaida-Sastago,41.320542,-0.427115,La Zaida,ES
+Estación de tren La Puebla de Hijar,41.2244,-0.438595,La Puebla de Híjar,ES
+Estación de tren Samper,41.182183,-0.368761,Samper De Calanda,ES
+Estación de tren Caspe,41.239738,-0.042701,Caspe,ES
+Estación de tren Fabara,41.234405,0.143284,Fabara / Favara,ES
+Estación de tren Nonaspe,41.213788,0.242472,Nonaspe / Nonasp,ES
+Estación de tren Faio-La Pobla de Massaluca (fayon),41.225247,0.350275,la Pobla de Massaluca,ES
+Estación de tren Riba-Roja Debre,41.248451,0.480888,Riba-roja d'Ebre,ES
+Estación de tren Flix,41.229502,0.540071,Flix,ES
+Estación de tren Asco,41.182479,0.568964,Ascó,ES
+Estación de tren Mora La Nova,41.106374,0.652893,Móra la Nova,ES
+Estación de tren Capcanes,41.102057,0.78033,Capçanes,ES
+Estación de tren Marca-Falset,41.130945,0.810328,Marçà,ES
+Estación de tren Pradell de La Teixeta,41.13324,0.858371,Pradell de la Teixeta,ES
+Estación de tren Riudecanyes-Botarell,41.140027,0.975648,Riudecanyes,ES
+Estación de tren Les Borges del Camp,41.165525,1.020774,Les Borges del Camp,ES
+Estación de tren Reus,41.160524,1.099979,Reus,ES
+Estación de tren Vila-Seca,41.112744,1.150389,Vila-seca,ES
+Estación de tren Altafulla-Tamarit,41.136446,1.37453,Altafulla,ES
+Estación de tren Torredembarra,41.142857,1.40566,Torredembarra,ES
+Estación de tren Sant Vicenc de Calders,41.186245,1.526315,el Vendrell,ES
+Estación de tren Vilanova I La Geltru,41.219993,1.733331,Vilanova i la Geltrú,ES
+Estación de tren Valls,41.28963,1.258734,Valls,ES
+Estación de tren Duesaigues-Largentera,41.143776,0.920942,l'Argentera,ES
+Estación de tren Port Aventura,41.08707,1.145486,Salou,ES
+Estación de tren Juneda,41.543879,0.825584,Juneda,ES
+Estación de tren Les Borges Blanques,41.521461,0.877715,les Borges Blanques,ES
+Estación de tren Vinaixa,41.425077,0.970308,Vinaixa,ES
+Estación de tren Vimbodi I Poblet,41.40261,1.046008,Vimbodí i Poblet,ES
+Estación de tren Lespluga de Francoli,41.400525,1.103389,l'Espluga de Francolí,ES
+Estación de tren Montblanc,41.376648,1.165431,Montblanc,ES
+Estación de tren Nulles-Brafim,41.250306,1.297449,Nulles,ES
+Estación de tren Vilabella,41.240312,1.315601,el Padrós,ES
+Estación de tren Salomo,41.223474,1.376617,Salomó,ES
+Estación de tren Roda de Mar,41.186315,1.4551443,Roda de Berà,ES
+Estación de tren Vilaverd,41.337602,1.176599,Vilaverd,ES
+Estación de tren La Riba,41.318354,1.181248,la Riba,ES
+Estación de tren Puigverd de Lleida-Artesa de Lleida,41.55365,0.733058,Puigverd de Lleida,ES
+Estación de tren La Floresta,41.504263,0.924303,la Floresta,ES
+Estación de tren Portbou,42.424494,3.157858,Portbou,ES
+Estación de tren Llanca,42.3665949,3.148987,Llançà,ES
+Estación de tren Fuentes de Ebro,41.515065,-0.618625,Fuentes de Ebro,ES
+Estación de tren La Selva del Camp,41.210284,1.144072,Selva,ES
+Estación de tren Alcover,41.261658,1.174228,Alcover,ES
+Estación de tren Binefar,41.849768,0.291478,La Litera / La Llitera,ES
+Estación de tren Monzon-Rio Cinca,41.913679,0.196939,Monzón,ES
+Estación de tren Sarinyena,41.817529,-0.17076,Sariñena,ES
+Estación de tren Granyen,41.938033,-0.369329,Grañén,ES
+Estación de tren Lhospitalet de Llobregat,41.364129,2.100766,l'Hospitalet de Llobregat,ES
+Estación de tren Montcada Bifurcacio,41.468992,2.178904,Montcada i Reixac,ES
+Estación de tren Cerdanyola del Valles,41.492582,2.14763,Cerdanyola del Vallès,ES
+Estación de tren Barbera del Valles,41.507162,2.127558,Barbera Del Valles,ES
+Estación de tren Sabadell Sud,41.53662,2.105617,Sabadell,ES
+Estación de tren Terrasa Est,41.567261,2.041561,Terrassa,ES
+Estación de tren Sant Vicenc de Castellet,41.667899,1.863451,Sant Vicenç de Castellet,ES
+Estación de tren Manresa,41.720129,1.82899,Manresa,ES
+Estación de tren Rajadell,41.733159,1.696275,Rajadell,ES
+Estación de tren Aguilar de Segarra,41.738917,1.62372,Aguilar de Segarra,ES
+Estación de tren Seguers-Sant Pere Sallavinera,41.747991,1.574167,Sant Pere Sallavinera,ES
+Estación de tren Calaf,41.730334,1.515097,Calaf,ES
+Estación de tren Sant Marti Sesgueioles,41.701217,1.486204,Pujalt,ES
+Estación de tren Sant Guim de Freixenet,41.655924,1.42053,Sant Guim de Freixenet,ES
+Estación de tren Cervera,41.673611,1.274773,Cervera,ES
+Estación de tren Tarrega,41.650387,1.138963,Tàrrega,ES
+Estación de tren Anglesola,41.646448,1.079192,Anglesola,ES
+Estación de tren Bellpuig,41.632545,1.012993,Bellpuig,ES
+Estación de tren Castellnou de Seana,41.637464,0.967736,Castellnou de Seana,ES
+Estación de tren Golmes,41.635929,0.930863,Golmés,ES
+Estación de tren Mollerussa,41.631779,0.896775,Mollerussa,ES
+Estación de tren Bell-Lloc Durgell,41.631619,0.781547,Bell-lloc d'Urgell,ES
+Estación de tren Canfranc,42.751471,-0.514641,Canfranc,ES
+Estación de tren Villanua-Letranz,42.688745,-0.52346,Villanúa,ES
+Estación de tren Castiello-Pueblo,42.62811,-0.546291,Castiello De Jaca,ES
+Estación de tren Jaca,42.578303,-0.539231,Jaca,ES
+Estación de tren Sabinyanigo,42.520446,-0.373085,Sabiñánigo,ES
+Estación de tren Villanueva de Gallego,41.76551,-0.822204,Villanueva de Gállego,ES
+Estación de tren Caldearenas-Aquilue,42.397973,-0.499309,Caldearenas,ES
+Estación de tren Santa Maria Y La Penya,42.38039,-0.695647,Las Peñas de Riglos,ES
+Estación de tren Ayerbe,42.27561,-0.682569,Ayerbe,ES
+Estación de tren Granollers Centre,41.594528,2.29107,Granollers,ES
+Estación de tren Gualba,41.714078,2.533778,Riells,ES
+Estación de tren Hostalric,41.747657,2.632175,Hostalric,ES
+Estación de tren Riudellots,41.896232,2.811599,Riudellots de la Selva,ES
+Estación de tren Fornells de La Selva,41.935157,2.809732,Fornells de la Selva,ES
+Estación de tren Celra,42.02723,2.874969,Celrà,ES
+Estación de tren Bordils-Juia,42.037068,2.915255,Juià,ES
+Estación de tren Sant Jordi Desvalls,42.068319,2.964533,Sant Jordi Desvalls,ES
+Estación de tren Camallera,42.122359,2.965448,"Saus, Camallera i Llampaies",ES
+Estación de tren Sant Miquel de Fluvia,42.172087,2.989663,Sant Miquel de Fluvià,ES
+Estación de tren Vilamalla,42.216202,2.977874,Vilamalla,ES
+Estación de tren Vilajuiga,42.325739,3.085385,Vilajuïga,ES
+Estación de tren Colera,42.407068,3.154262,Colera,ES
+Estación de tren Cerbere,42.441476,3.163259,Cerbère,ES
+Estación de tren Alegria de Alava-Dulantzi,42.848723,-2.514668,Alegría,ES
+Estación de tren Salvatierra/agurain,42.84643,-2.38921,Salvatierra/Agurain,ES
+Estación de tren Araia,42.869599,-2.306807,San Millán/Donemiliaga,ES
+Estación de tren Brinkola-Onyati,43.019887,-2.334469,Legazpi,ES
+Estación de tren Ormaiztegui,43.040151,-2.255831,Ormaiztegi,ES
+Estación de tren Beasain,43.046174,-2.203234,Lazkao,ES
+Estación de tren Ordizia/ordicia,43.052583,-2.181019,Ordizia,ES
+Estación de tren Tolosa Centro,43.139368,-2.074105,Tolosa,ES
+Estación de tren Villabona-Zizurkil,43.189391,-2.055641,Irura,ES
+Estación de tren Andoain-Centro,43.214729,-2.020394,Andoain,ES
+Estación de tren Hernani-Centro,43.2669561,-1.9720551,Astigarraga,ES
+Estación de tren Lezo-Errenteria,43.3158311,-1.8995674,Lezo,ES
+Estación de tren Pasaia,43.3188088,-1.9172992,Errenteria,ES
+Estación de tren Herrera (apd),43.319255,-1.9370283,Pasaia,ES
+Estación de tren Nanclares/langraiz,42.816216,-2.804942,Iruña Oka/Iruña De Oca,ES
+Estación de tren La Puebla de Arganzon,42.765245,-2.830385,La Puebla de Arganzón,ES
+Estación de tren Manzanos,42.742899,-2.867501,Ribera Baja/Erribera Beitia,ES
+Estación de tren Cortes de Navarra,41.915076,-1.420439,Cortes,ES
+Estación de tren Ribaforada,41.997038,-1.515097,Ribaforada,ES
+Estación de tren Villafranca de Navarra,42.280734,-1.745716,Villafranca,ES
+Estación de tren Marcilla de Navarra,42.334851,-1.717418,Marcilla,ES
+Estación de tren Olite/erriberri,42.484989,-1.649964,Olite/Erriberri,ES
+Estación de tren Uharte-Arakil,42.920606,-1.974814,Uharte-Arakil,ES
+Estación de tren Etxarri-Aranatz,42.911138,-2.071245,Etxarri-Aranatz,ES
+Estación de tren Briviesca,42.542765,-3.319287,Briviesca,ES
+Estación de tren Pancorbo,42.630486,-3.112307,Pancorbo,ES
+Estación de tren Utebo,41.7105305,-0.9979222,Utebo,ES
+Estación de tren Alagon,41.771422,-1.112771,Alagón,ES
+Estación de tren Cabanyas de Ebro,41.788065,-1.167533,Cabañas de Ebro,ES
+Estación de tren Pedrola,41.805198,-1.201673,Pedrola,ES
+Estación de tren Luceni,41.826116,-1.243536,Luceni,ES
+Estación de tren Gallur,41.867164,-1.321342,Gallur,ES
+Estación de tren Alcanadre,42.407437,-2.122094,Alcanadre,ES
+Estación de tren Agoncillo,42.443585,-2.291701,Agoncillo,ES
+Estación de tren Quero,39.504173,-3.266072,Quero,ES
+Estación de tren Villacanyas,39.622698,-3.33051,Villacañas,ES
+Estación de tren Villasequilla,39.879535,-3.728453,Villasequilla,ES
+Estación de tren Castillejo-Anyover,39.949634,-3.738774,Aranjuez,ES
+Estación de tren Plasencia,40.022282,-6.099397,Plasencia,ES
+Estación de tren Casatejada,39.891909,-5.677732,Casatejada,ES
+Estación de tren Illescas,40.12088,-3.842262,Illescas,ES
+Estación de tren Fuenlabrada,40.2833747,-3.7994538,Fuenlabrada,ES
+Estación de tren Canyaveral,39.789124,-6.375031,Cañaveral,ES
+Estación de tren Casas de Millan,39.811866,-6.326045,Casas de Millán,ES
+Estación de tren Mirabel,39.866229,-6.228969,Mirabel,ES
+Estación de tren Valencia de Alcantara,39.426928,-7.230688,Valencia de Alcántara,ES
+Estación de tren San Vicente de Alcantara,39.381561,-7.117075,San Vicente de Alcántara,ES
+Estación de tren Daimiel,39.061553,-3.604213,Daimiel,ES
+Estación de tren Almagro,38.895323,-3.709777,Almagro,ES
+Estación de tren Ariza,41.3098,-2.059411,Ariza,ES
+Estación de tren Arcos de Jalon,41.215854,-2.278998,Arcos De Jalón,ES
+Estación de tren Medinaceli,41.165207,-2.421241,Medinaceli,ES
+Estación de tren Siguenza,41.071417,-2.646407,Sigüenza,ES
+Estación de tren Baides,41.004864,-2.785635,Baides,ES
+Estación de tren Matillas,40.953808,-2.84326,Matillas,ES
+Estación de tren Jadraque,40.930229,-2.935935,Jadraque,ES
+Estación de tren Carrascosa de Henares,40.90598,-3.014352,Espinosa de Henares,ES
+Estación de tren Humanes de Mohernando,40.831273,-3.13886,Humanes,ES
+Estación de tren Yunquera de Henares,40.747013,-3.163226,Yunquera de Henares,ES
+Estación de tren Guadalajara,40.6441032,-3.1822298,Guadalajara,ES
+Estación de tren Avila,40.657255,-4.683312,Ávila,ES
+Estación de tren Pozuelo,40.4473443,-3.8002865,Pozuelo de Alarcón,ES
+Estación de tren Las Rozas (apd),40.4942255,-3.8681086,Las Rozas de Madrid,ES
+Estación de tren Villalba de Guadarrama,40.6265067,-4.0081871,Collado Villalba,ES
+Estación de tren San Yago,40.6178786,-4.0312349,Galapagar,ES
+Estación de tren Las Zorreras-Navalquejigo,40.6092725,-4.0463634,El Escorial,ES
+Estación de tren Zarzalejo,40.53871,-4.15818,Zarzalejo (estación),ES
+Estación de tren Robledo de Chavela,40.520802,-4.246774,Robledo de Chavela,ES
+Estación de tren Santa Maria de La Alameda-Peguerinos,40.568937,-4.269332,Santa María de la Alameda,ES
+Estación de tren El Pimpollar,40.567587,-4.283541,Santa María De La Alameda,ES
+Estación de tren Las Navas del Marques,40.589205,-4.362259,Las Navas del Marqués,ES
+Estación de tren Navalperal,40.591152,-4.408382,Navalperal de Pinares,ES
+Estación de tren Herradon-La Canyada,40.599275,-4.495039,Herradón de Pinares,ES
+Estación de tren Torrelodones,40.5745499,-3.9565955,"Estación, La",ES
+Estación de tren Galapagar-La Navata,40.6002664,-3.9822646,La Navata,ES
+Estación de tren Los Negrales,40.6385681,-4.0220307,Alpedrete,ES
+Estación de tren Collado Mediano,40.69276,-4.0359164,Collado Mediano,ES
+Estación de tren Los Molinos-Guadarrama,40.7066368,-4.0673999,Los Molinos,ES
+Estación de tren Cercedilla,40.7375282,-4.0664502,Cercedilla,ES
+Estación de tren Tablada,40.705648,-4.12531,Guadarrama,ES
+Estación de tren Gudillos,40.716914,-4.157681,El Espinar,ES
+Estación de tren Otero-Herreros,40.80097,-4.203504,Otero de Herreros,ES
+Estación de tren Ortigosa del Monte,40.832771,-4.168094,Ortigosa del Monte,ES
+Estación de tren Navas de Riofrio- La Losa,40.856673,-4.141103,Navas de Riofrío,ES
+Estación de tren Humanes,40.2556903,-3.8286016,Humanes de Madrid,ES
+Estación de tren Arevalo,41.047123,-4.701988,Arévalo,ES
+Estación de tren Pozaldez,41.36792,-4.836001,Pozaldez,ES
+Estación de tren Matapozuelos,41.422794,-4.801025,Matapozuelos,ES
+Estación de tren Valdestillas,41.488729,-4.772937,Valdestillas,ES
+Estación de tren Viana,41.52407,-4.754489,Viana de Cega,ES
+Estación de tren Soria,41.754754,-2.476537,Soria,ES
+Estación de tren Quintana Redonda,41.639726,-2.609682,Quintana Redonda,ES
+Estación de tren Tardelcuende,41.593525,-2.639337,Tardelcuende,ES
+Estación de tren Almazan,41.489019,-2.525375,Almazán,ES
+Estación de tren Alcala de Henares,40.4889113,-3.3662523,Alcalá de Henares,ES
+Estación de tren San Fernando Henares,40.442537,-3.5344609,Coslada,ES
+Estación de tren Torrejon de Ardoz,40.4547384,-3.4797415,Torrejón de Ardoz,ES
+Estación de tren Meco (apd-Cgd),40.5344356,-3.2990455,Azuqueca de Henares,ES
+Estación de tren Montearagon,39.960996,-4.647093,Montearagón,ES
+Estación de tren Villanueva de La Serena,38.96886,-5.7965,Villanueva de la Serena,ES
+Estación de tren Don Benito,38.96695,-5.862923,Don Benito,ES
+Estación de tren Valdetorres,38.913301,-6.069407,Valdetorres,ES
+Estación de tren Guarenya,38.896749,-6.128842,Guareña,ES
+Estación de tren Garrovilla-Las Vegas,38.915763,-6.47408,La Garrovilla,ES
+Estación de tren Guadiana del Caudillo,38.922099,-6.689998,Guadiana,ES
+Estación de tren Cabeza de Buey,38.72389,-5.227067,Cabeza del Buey,ES
+Estación de tren Castuera,38.735021,-5.541637,Castuera,ES
+Estación de tren Campanario,38.853395,-5.641415,Campanario,ES
+Estación de tren Calamonte,38.886931,-6.382965,Calamonte,ES
+Estación de tren Almendralejo,38.684662,-6.399815,Almendralejo,ES
+Estación de tren Villafranca de Los Barros,38.564402,-6.352048,Villafranca de los Barros,ES
+Estación de tren Los Santos de Maimona,38.449724,-6.361749,Los Santos de Maimona,ES
+Estación de tren Magaz,41.976561,-4.432114,Magaz de Pisuerga,ES
+Estación de tren Quintana del Puente,42.079974,-4.19858,Quintana del Puente,ES
+Estación de tren Villaquiran,42.215717,-3.999396,Villaquirán de los Infantes,ES
+Estación de tren La Gineta,39.111665,-2.000155,La Gineta,ES
+Estación de tren La Roda de Albacete,39.199594,-2.162547,La Roda,ES
+Estación de tren Minaya,39.240738,-2.348403,Minaya,ES
+Estación de tren Campo de Criptana,39.394343,-3.117746,Campo de Criptana,ES
+Estación de tren Mengibar-Artichuela (apd-Cgd),37.978219,-3.803308,Mengíbar,ES
+Estación de tren Almuradiel-Viso del Marques,38.514267,-3.501935,Almuradiel,ES
+Estación de tren Santa Cruz de Mudela,38.644428,-3.451493,Santa Cruz de Mudela,ES
+Estación de tren El Romeral,39.694516,-3.430502,El Romeral,ES
+Estación de tren Camarles-Deltebre,40.774757,0.671647,Camarles,ES
+Estación de tren Lampolla-El Perello-Deltebre,40.812011,0.708221,l'Ampolla,ES
+Estación de tren Lametlla de Mar,40.886188,0.800427,l'Ametlla de Mar,ES
+Estación de tren L'HOSPITALET DE L'INFANT,40.995863,0.920733,Vandellòs i l'Hospitalet de l'Infant,ES
+Estación de tren Feculas-Navarra,42.411148,-2.098196,Lodosa,ES
+Estación de tren Caudete,38.716163,-0.959727,Caudete,ES
+Estación de tren Monzon de Campos,42.105538,-4.501677,Monzón de Campos,ES
+Estación de tren Amusco,42.178019,-4.480743,Amusco,ES
+Estación de tren Pinya,42.211747,-4.434689,Piña de Campos,ES
+Estación de tren Fromista,42.2649,-4.402433,Frómista,ES
+Estación de tren Osorno,42.415077,-4.357367,Osorno,ES
+Estación de tren Espinosa de Villagonzalo (apd),42.452373,-4.367811,Espinosa de Villagonzalo,ES
+Estación de tren Herrera de Pisuerga,42.598477,-4.316683,Herrera de Pisuerga,ES
+Estación de tren Alar del Rey-San Quirce,42.656837,-4.311372,Alar del Rey,ES
+Estación de tren Quintanilla de Las Torres,42.81903,-4.202753,Pomar de Valdivia,ES
+Estación de tren Mataporquera,42.870901,-4.165406,Valdeolea,ES
+Estación de tren Barcena,43.130561,-4.056662,Bárcena de Pie de Concha,ES
+Estación de tren Los Corrales de Buelna,43.257961,-4.064679,Los Corrales de Buelna,ES
+Estación de tren Renedo,43.355636,-3.953732,Piélagos,ES
+Estación de tren Malianyo,43.41664,-3.841901,Maliaño,ES
+Estación de tren Las Caldas de Besaya,43.295518,-4.075294,Los Corrales De Buelna,ES
+Estación de tren Cisneros,42.19112,-4.850249,Cisneros,ES
+Estación de tren Santas Martas,42.460004,-5.386777,Santas Martas,ES
+Estación de tren Moriscos,41.011633,-5.584713,Moriscos,ES
+Estación de tren Gomecello,41.041859,-5.541551,Gomecello,ES
+Estación de tren Pitiegua,41.063741,-5.474174,Pitiegua,ES
+Estación de tren El Pedroso de La Armunya,41.079901,-5.406019,El Pedroso de la Armuña,ES
+Estación de tren Cantalapiedra,41.133585,-5.182961,Cantalapiedra,ES
+Estación de tren Fresno El Viejo,41.191351,-5.138061,Fresno el Viejo,ES
+Estación de tren El Carpio,41.215464,-5.114466,Carpio,ES
+Estación de tren Campillo,41.259509,-5.017791,El Campillo,ES
+Estación de tren Nava del Rey,41.334716,-5.076818,Nava del Rey,ES
+Estación de tren Toro,41.512201,-5.384953,Toro,ES
+Estación de tren Carbajales de Alba,41.681542,-5.971906,Carbajales de Alba,ES
+Estación de tren Ferreruela de Tabara,41.764106,-6.0739,Ferreruela,ES
+Estación de tren Abejera,41.80942,-6.141851,Riofrío de Aliste,ES
+Estación de tren Sarracin de Aliste,41.848497,-6.20513,Sarracín de Aliste,ES
+Estación de tren Linarejos-Pedroso,41.946963,-6.484541,Manzanal de Arriba,ES
+Estación de tren Guadalmez-Los Pedroches,38.69921,-4.929771,Guadalmez,ES
+Estación de tren Almadenejos-Almaden,38.740578,-4.730387,Almadenejos,ES
+Estación de tren Brazatortas-Veredas,38.668758,-4.316468,Brazatortas,ES
+Estación de tren Teruel,40.341029,-1.110284,Teruel,ES
+Estación de tren Maria de Huerva,41.539759,-0.998082,María de Huerva,ES
+Estación de tren Aranyales de Muel,41.468946,-1.086394,Muel,ES
+Estación de tren Longares,41.404787,-1.158791,Longares,ES
+Estación de tren Carinyena,41.335586,-1.228422,Cariñena,ES
+Estación de tren Encinacorba,41.28865,-1.278534,Encinacorba,ES
+Estación de tren Villarreal de Huerva,41.196498,-1.287096,Villarreal de Huerva,ES
+Estación de tren Villadoz,41.165482,-1.279339,Villadoz,ES
+Estación de tren Badules,41.13951,-1.251572,Badules,ES
+Estación de tren Villahermosa,41.108492,-1.239803,Villahermosa del Campo,ES
+Estación de tren Ferreruela,41.06387,-1.239384,Ferreruela de Huerva,ES
+Estación de tren Cuencabuena,41.009293,-1.254641,Calamocha,ES
+Estación de tren Caminreal-Fuentes Claras,40.85111,-1.33765,Fuentes Claras,ES
+Estación de tren Torrijo del Campo,40.826012,-1.340498,Torrijo del Campo,ES
+Estación de tren Monreal del Campo,40.782321,-1.360792,Jiloca,ES
+Estación de tren Villafranca del Campo,40.683827,-1.357927,Villafranca del Campo,ES
+Estación de tren Santa Eulalia del Campo,40.572917,-1.312995,Santa Eulalia del Campo,ES
+Estación de tren Cella,40.455266,-1.244329,Cella,ES
+Estación de tren Puerto Escandon,40.273092,-0.985079,La Puebla de Valverde,ES
+Estación de tren Sarrion,40.146339,-0.823631,Sarrión,ES
+Estación de tren Rubielos de Mora,40.118006,-0.773463,Albentosa,ES
+Estación de tren Barracas,40.01174,-0.696151,Barracas,ES
+Estación de tren Caudiel (apt),39.9473166,-0.5720277,Caudiel,ES
+Estación de tren Jerica-Viver (apt),39.9146309,-0.5689031,Jérica,ES
+Estación de tren Segorbe,39.8469583,-0.4824138,Segorbe,ES
+Estación de tren Grisen,41.745261,-1.165924,Grisén,ES
+Estación de tren Plasencia de Jalon,41.68935,-1.234237,Plasencia de Jalón,ES
+Estación de tren Rueda de Jalon-Lumpiaque,41.638892,-1.281667,Rueda de Jalón,ES
+Estación de tren Epila,41.60933,-1.301043,Épila,ES
+Estación de tren Salillas de Jalon,41.56794,-1.325848,Salillas de Jalón,ES
+Estación de tren Calatorao,41.528692,-1.360545,Ricla,ES
+Estación de tren Morata de Jalon,41.475467,-1.479721,Morata de Jalón,ES
+Estación de tren Purroy,41.477236,-1.540446,Morés,ES
+Estación de tren Sabinyan,41.443981,-1.571474,Sabiñán,ES
+Estación de tren Paracuellos-Sabinyan,41.42931,-1.567483,Paracuellos De La Ribera,ES
+Estación de tren Terrer,41.322218,-1.709254,Terrer,ES
+Estación de tren Ateca,41.324659,-1.785268,Ateca,ES
+Estación de tren Alhama de Aragon,41.294398,-1.904454,Alhama de Aragón,ES
+Estación de tren Cetina,41.295978,-1.961811,Cetina,ES
+Estación de tren Monreal de Ariza,41.298767,-2.110448,Monreal de Ariza,ES
+Estación de tren Santa Maria de Huerta,41.264421,-2.177525,Santa María de Huerta,ES
+Estación de tren Bubierca,41.31719,-1.855198,Bubierca,ES
+Estación de tren Los Rosales,37.5898444,-5.7261638,Los Rosales,ES
+Estación de tren Tocina,37.6092611,-5.7316916,Tocina,ES
+Estación de tren Villanueva del Rio-Minas,37.6616071,-5.712155,Villanueva del Río y Minas,ES
+Estación de tren Pedroso,37.8373261,-5.7624477,El Pedroso,ES
+Estación de tren Cazalla-Constantina,37.9327717,-5.7044058,Cazalla de la Sierra,ES
+Estación de tren Guadalcanal,38.090197,-5.803388,Guadalcanal,ES
+Estación de tren Fuente del Arco,38.16353,-5.900484,Fuente del Arco,ES
+Estación de tren Llerena,38.237,-6.009017,Llerena,ES
+Estación de tren Penyaranda de Bracamonte,40.898138,-5.206361,Peñaranda De Bracamonte,ES
+Estación de tren Aldealengua,40.97989,-5.552951,Aldealengua,ES
+Estación de tren San Morales,40.984243,-5.492955,San Morales,ES
+Estación de tren Babilafuente,40.972426,-5.430593,Babilafuente,ES
+Estación de tren Villar de Gallimazo,40.951981,-5.296183,Villar de Gallimazo,ES
+Estación de tren Narros del Castillo,40.866641,-5.052869,Narros del Castillo,ES
+Estación de tren Crespos,40.87011,-4.96803,Crespos,ES
+Estación de tren San Pedro del Arroyo,40.803841,-4.871407,San Pedro del Arroyo,ES
+Estación de tren Cardenyosa de Avila,40.73912,-4.75075,Cardeñosa,ES
+Estación de tren El Prat Aeroport,41.303844,2.07218,el Prat de Llobregat,ES
+Estación de tren Aguilas,37.4098333,-1.5725777,Águilas,ES
