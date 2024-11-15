@@ -10,15 +10,20 @@ trip_service = TripService()
 
 @router.get("/")
 async def get_grafo():
-    grafo =await trip_service.prueba()
+    grafo =await graph_repo.prueba()
     return grafo
 
 @router.post("/viaje_filtro")
 async def get_viaje_filtro(filtro: TripFilter):
-    viaje = await trip_service.trip_filter(filtro)
+    viaje = await trip_service.get_viaje_filtro(filtro)
     return viaje
 
 @router.post("/trip_last_filter")
 async def get_trip_filter(filter: TripFilter):
     trip = await trip_service.get_trip_custom_filters(filter)
     return trip
+
+@router.get("/allstations")
+async def get_all_stations():
+    grafo =await graph_repo.get_all_stations()
+    return grafo

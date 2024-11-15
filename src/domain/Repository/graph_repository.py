@@ -2,6 +2,7 @@ from ..database import Database
 from src.domain.user import User
 from src.domain.group import Group
 from src.domain.filter import TripFilter
+import csv
 
 class GraphRepository:
     initialized = False
@@ -56,7 +57,7 @@ class GraphRepository:
         query = """
         SELECT *
                 FROM cypher('el_grefo', $$
-                MATCH (n:Estacion)-[r:RUTA*3]->(m:Estacion)
+                MATCH (n:Estacion)-[r:RUTA]->(m:Estacion)
                 """
 
         filters_nodos = []
@@ -85,7 +86,7 @@ class GraphRepository:
         return result
 
     async def maxSetFilterTrip(self):
-        '''
+        """
             SELECT *
                     FROM cypher(
                     'el_grefo',
@@ -100,7 +101,7 @@ class GraphRepository:
                     LIMIT 3
                     $$
             ) AS (camino agtype);
-            '''
+            """
 
 
     async def customfilter(self, filter: TripFilter):
@@ -172,3 +173,49 @@ class GraphRepository:
         print(consulta)
         result = await conn.fetch(consulta)
         return result
+
+    async def insertNodes(self):
+        if not GraphRepository.initialized:
+            await self.first()
+        conn = await self.conn.get_conn()
+        async with conn.transaction():
+            async with open('src/estaciones_aeropuertos.csv', 'r') as file:
+                reader = csv.DictReader(file)
+                for row in reader:
+                    query = f"""
+                       SELECT * FROM cypher('el_grefo', $$
+                       CREATE (:Estacion {{
+                           id: {row['id']},
+                           nombre: '{row['name']}',
+                           ciudad: '{row['city']}',
+                           pais: '{row['country']}',
+                           latitud: {row['lat']},
+                           longitud: {row['lon']}
+                       }})
+                       $$) AS (n agtype);
+                       """
+                    await conn.execute(query)
+
+
+    async def get_all_stations(self):
+        if not GraphRepository.initialized:
+            await self.first()
+        conn = await self.conn.get_conn()
+
+
+        sql = '''
+        SELECT *
+                FROM cypher('el_grefo', $$
+                    MATCH (n)
+                    RETURN n
+                $$) AS result(nodo1 agtype);'''
+        try:
+            #await conn.fetch(sql)
+            #await conn.fetch(sql12)
+            #await conn.fetch(sql13)
+            prueba23 = await conn.fetch(sql)
+
+            return prueba23
+        except Exception as e:
+            raise Exception(f"Error : {str(e)}")
+

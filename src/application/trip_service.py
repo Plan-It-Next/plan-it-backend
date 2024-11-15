@@ -17,6 +17,7 @@ class TripService():
 
     async def get_trip_custom_filters(self, filter: TripFilter):
         trip=  await graph_repo.customfilter(filter)
+        print(trip)
         trip_format = await self.formatear_resultado_caminos(trip)
         return trip_format
 
