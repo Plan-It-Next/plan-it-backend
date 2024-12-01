@@ -7,8 +7,7 @@ CREATE TABLE users (
 
 CREATE TABLE groups (
     group_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    name VARCHAR(255) NOT NULL,
-    budget FLOAT
+    name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE user_group (
@@ -53,10 +52,10 @@ INSERT INTO users (user_id, name, email, password) VALUES
 ('e0b4c95d-5b2e-405f-bc79-e9e3d6320d20', 'Pedro Martínez', 'pedro.martinez@example.com', '$2b$12$5SJ5h5hszkbU9uNP9NWmU.OE8z5Lz29Zu/ARPVxzriLf4aDxZcj6a'); --pedrito
 
 -- Insertar datos en la tabla groups
-INSERT INTO groups (group_id, name, budget) VALUES
-('3864dfc4-c9ca-4929-966e-717e7269e69c', 'Grupo A', 1000.00),
-('d5a1c93b-bf3f-4d3b-bb3c-3d4018f15b82', 'Grupo B', 1500.50),
-('ef1d0c62-f536-4786-87d1-1b9f07abf2a8', 'Grupo C', 2000.00);
+INSERT INTO groups (group_id, name) VALUES
+('3864dfc4-c9ca-4929-966e-717e7269e69c', 'Grupo A'),
+('d5a1c93b-bf3f-4d3b-bb3c-3d4018f15b82', 'Grupo B'),
+('ef1d0c62-f536-4786-87d1-1b9f07abf2a8', 'Grupo C');
 
 -- Insertar datos en la tabla user_group
 -- Asegúrate de usar los user_id y group_id correctos
@@ -79,27 +78,6 @@ INSERT INTO user_polls(poll_id, user_id, group_id, vote) values
 ((SELECT poll_id FROM polls WHERE poll_name = 'Comida'), (SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), true),
 ((SELECT poll_id FROM polls WHERE poll_name = 'Concierto'), (SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), false);
 
-
-SELECT *
-FROM user_group
-WHERE group_id = '3864dfc4-c9ca-4929-966e-717e7269e69c'
-
-select * from polls
-
-SELECT
-    COUNT(*) AS total_usuarios
-FROM user_group ug
-JOIN polls vt ON vt.group_id = ug.group_id
-WHERE vt.poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d';
-
-SELECT
-    COUNT(*) AS total_votos
-FROM user_polls v
-WHERE v.poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d' AND vote = true ;
-
-select * from user_polls where poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d'
-
-
 INSERT INTO calendar (user_id, group_id, available_day)
 VALUES
 ((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-01'),
@@ -107,11 +85,3 @@ VALUES
 ((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-02'),
 ((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-03');
 
-
-SELECT
-    available_day,
-    COUNT(DISTINCT user_id) AS usuarios_disponibles
-FROM calendar
-WHERE group_id = (SELECT group_id FROM groups WHERE name = 'Grupo A')
-GROUP BY available_day
-ORDER BY usuarios_disponibles DESC;
