@@ -14,7 +14,34 @@ CREATE TABLE groups (
 CREATE TABLE user_group (
     user_id UUID REFERENCES users (user_id),
     group_id UUID REFERENCES groups (group_id),
+    user_group_budget FLOAT,
     PRIMARY KEY (user_id, group_id)
+);
+
+CREATE TABLE polls (
+    poll_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    group_id UUID REFERENCES groups (group_id),
+    poll_name VARCHAR(255) NOT NULL,
+    poll_date TIMESTAMP DEFAULT NOW(),
+    FOREIGN KEY (group_id) REFERENCES groups (group_id) ON DELETE CASCADE
+);
+
+CREATE TABLE user_polls (
+    poll_id UUID NOT NULL,
+    user_id UUID NOT NULL,
+    group_id UUID NOT NULL,
+    vote BOOLEAN NOT NULL,
+    PRIMARY KEY (poll_id, user_id),
+    FOREIGN KEY (poll_id) REFERENCES polls (poll_id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id, group_id) REFERENCES user_group (user_id, group_id) ON DELETE CASCADE
+);
+
+CREATE TABLE calendar (
+    user_id UUID NOT NULL,
+    group_id UUID NOT NULL,
+    available_day DATE NOT NULL,
+    PRIMARY KEY (user_id, group_id, available_day),
+    FOREIGN KEY (user_id, group_id) REFERENCES user_group (user_id, group_id) ON DELETE CASCADE
 );
 
 -- Insertar datos en la tabla users
@@ -33,11 +60,58 @@ INSERT INTO groups (group_id, name, budget) VALUES
 
 -- Insertar datos en la tabla user_group
 -- Asegúrate de usar los user_id y group_id correctos
-INSERT INTO user_group (user_id, group_id) VALUES
-((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A')),
-((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B')),
-((SELECT user_id FROM users WHERE email = 'maria.lopez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B')),
-((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A')),
-((SELECT user_id FROM users WHERE email = 'ana.sanchez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo C')),
-((SELECT user_id FROM users WHERE email = 'pedro.martinez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B'));
+INSERT INTO user_group (user_id, group_id, user_group_budget) VALUES
+((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), 50),
+((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B'), 60),
+((SELECT user_id FROM users WHERE email = 'maria.lopez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B'), 566),
+((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), 890),
+((SELECT user_id FROM users WHERE email = 'ana.sanchez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo C'), 20),
+((SELECT user_id FROM users WHERE email = 'pedro.martinez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo B'), 340);
 
+
+INSERT INTO polls (group_id, poll_name) VALUES
+((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'Concierto'),
+((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'Comida'),
+((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'Safari');
+
+INSERT INTO user_polls(poll_id, user_id, group_id, vote) values
+((SELECT poll_id FROM polls WHERE poll_name = 'Concierto'), (SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), true),
+((SELECT poll_id FROM polls WHERE poll_name = 'Comida'), (SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), true),
+((SELECT poll_id FROM polls WHERE poll_name = 'Concierto'), (SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), false);
+
+
+SELECT *
+FROM user_group
+WHERE group_id = '3864dfc4-c9ca-4929-966e-717e7269e69c'
+
+select * from polls
+
+SELECT
+    COUNT(*) AS total_usuarios
+FROM user_group ug
+JOIN polls vt ON vt.group_id = ug.group_id
+WHERE vt.poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d';
+
+SELECT
+    COUNT(*) AS total_votos
+FROM user_polls v
+WHERE v.poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d' AND vote = true ;
+
+select * from user_polls where poll_id = '32986119-968c-48f1-90b5-ae26b2e46a3d'
+
+
+INSERT INTO calendar (user_id, group_id, available_day)
+VALUES
+((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-01'),
+((SELECT user_id FROM users WHERE email = 'juan.perez@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-02'),
+((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-02'),
+((SELECT user_id FROM users WHERE email = 'carlos.garcia@example.com'), (SELECT group_id FROM groups WHERE name = 'Grupo A'), '2024-12-03');
+
+
+SELECT
+    available_day,
+    COUNT(DISTINCT user_id) AS usuarios_disponibles
+FROM calendar
+WHERE group_id = (SELECT group_id FROM groups WHERE name = 'Grupo A')
+GROUP BY available_day
+ORDER BY usuarios_disponibles DESC;

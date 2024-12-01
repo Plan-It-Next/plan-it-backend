@@ -27,3 +27,8 @@ async def get_trip_filter(filter: TripFilter):
 async def get_all_stations():
     grafo =await graph_repo.get_all_stations()
     return grafo
+
+@router.get("/predef_filter")
+async def get_all_stations():
+    grafo =await trip_service.get_trip_predef_filter()
+    return grafo
