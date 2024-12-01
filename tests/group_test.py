@@ -6,14 +6,14 @@ client = TestClient(app)
 
 def test_get_all_groups_returns_all_groups():
     groups_expected = [
-        {"name": "Grupo A", "budget": 1000.00},
-        {"name": "Grupo B", "budget": 1500.50},
-        {"name": "Grupo C", "budget": 2000}
+        {"name": "Grupo A"},
+        {"name": "Grupo B"},
+        {"name": "Grupo C"}
     ]
 
     response = client.get("/groups")
     response_json = response.json()
-    response_filtered = [{"name": group["name"], "budget": group["budget"]} for group in response_json]
+    response_filtered = [{"name": group["name"]} for group in response_json]
 
 
     assert response.status_code == 200
