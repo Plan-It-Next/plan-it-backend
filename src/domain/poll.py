@@ -12,3 +12,7 @@ class PollReq(BaseModel):
     group_id: UUID
     poll_name: str
 
+class PollMod(BaseModel):
+    poll_id: UUID
+    poll_name: str
+

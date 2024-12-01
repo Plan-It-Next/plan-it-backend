@@ -44,7 +44,14 @@ where user_id = (SELECT user_id FROM users WHERE email = 'juan.perez@example.com
 and group_id = (SELECT group_id FROM groups WHERE name = 'Grupo A')
 
 select * from polls
-
+delete from polls where poll_id = 'accabe88-fc60-49ec-b319-aafc2bd4d9e7'
 INSERT INTO polls (group_id, poll_name) VALUES
-((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'PruebaJavi')
+((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'PruebaJavi2')
 RETURNING poll_id, group_id, poll_name, poll_date;
+
+UPDATE polls
+                    SET poll_name = 'pjavi3'
+                    WHERE poll_id = 'c15b0456-897b-4161-9c2a-67e268d0af3c'
+                    RETURNING poll_id, group_id, poll_name, poll_date
+
+delete from polls where poll_id = '1179b9fb-f7a5-4256-a6dd-e299ae6454ab'
