@@ -7,3 +7,11 @@ class UserCalendar(BaseModel):
     group_id: UUID
     available_day: date
 
+class AvDay(BaseModel):
+    available_day: date
+    num_users: int
+
+class UserAvDay(BaseModel):
+    user_id: UUID
+    available_day: date
+

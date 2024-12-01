@@ -5,7 +5,7 @@ from src.api.routes.api_trips import router as trips_router
 from src.api.routes.api_login import router as login_router
 from src.api.routes.api_user_group import router as user_group_router
 from src.api.routes.api_polls import router as polls_router
-
+from src.api.routes.api_calendar import router as calendar_routes
 
 app = FastAPI()
 
@@ -16,4 +16,5 @@ app.include_router(trips_router, prefix="/trip", tags=["trip"])
 app.include_router(login_router, prefix="/login", tags=["login"])
 app.include_router(user_group_router, prefix="/user_group", tags=["user_group"])
 app.include_router(polls_router, prefix="/polls", tags=["polls"])
+app.include_router(calendar_routes, prefix="/calendar", tags=["calendar"])
 

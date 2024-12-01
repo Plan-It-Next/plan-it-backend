@@ -4,6 +4,7 @@ WHERE group_id = '3864dfc4-c9ca-4929-966e-717e7269e69c'
 
 select * from polls
 select * from users
+select * from calendar
 SELECT
     COUNT(*) AS total_usuarios
 FROM user_group ug
