@@ -1,8 +1,8 @@
 from fastapi.testclient import TestClient
 from src.api.main import app
+from unittest import mock
 
 client = TestClient(app)
-
 
 def test_get_all_groups_returns_all_groups():
     groups_expected = [
@@ -44,3 +44,26 @@ def test_get_groups_by_user_id_throws_exception_no_groups():
 
     assert response.status_code == 404
     assert response_json['detail'] == f"No groups found"
+
+def test_get_all_groups_no_groups_found():
+    with mock.patch('src.domain.Repository.group_repository.GroupRepository.get_groups',
+                    return_value=[]):
+        response = client.get("/groups")
+        assert response.status_code == 404
+        assert response.json()['detail'] == "No groups found"
+
+def test_get_all_groups_generic_exception():
+    with mock.patch('src.domain.Repository.group_repository.GroupRepository.get_groups',
+                    side_effect=Exception("Unexpected error")):
+        response = client.get("/groups")
+        assert response.status_code == 500
+        assert response.json()['detail'] == "An error occurred while fetching groups"
+
+def test_get_groups_by_user_generic_exception():
+    user_id = "61139221-5e5e-4673-9f9d-7bcc0e2c1eb2"
+    with mock.patch('src.domain.Repository.group_repository.GroupRepository.get_groups_by_user',
+                    side_effect=Exception("Unexpected error")):
+        response = client.get(f"/groups/{user_id}")
+        assert response.status_code == 500
+        assert response.json()['detail'] == "An error occurred while fetching groups"
+
