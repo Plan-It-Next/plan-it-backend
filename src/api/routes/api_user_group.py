@@ -28,7 +28,7 @@ async def get_user_group(user_id: UUID, group_id: UUID):
         )
 
 
-@router.post("/budget", response_model=UserGroup)
+@router.put("/budget", response_model=UserGroup)
 async def set_user_group_budget(user_group: UserGroup):
     try:
         ug = await user_group_repo.set_user_group_budget(user_group)

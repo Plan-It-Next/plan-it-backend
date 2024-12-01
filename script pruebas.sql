@@ -42,3 +42,9 @@ update user_group
 set user_group_budget = 80
 where user_id = (SELECT user_id FROM users WHERE email = 'juan.perez@example.com')
 and group_id = (SELECT group_id FROM groups WHERE name = 'Grupo A')
+
+select * from polls
+
+INSERT INTO polls (group_id, poll_name) VALUES
+((SELECT group_id FROM groups WHERE name = 'Grupo A'), 'PruebaJavi')
+RETURNING poll_id, group_id, poll_name, poll_date;

@@ -8,3 +8,7 @@ class Poll(BaseModel):
     poll_name: str
     poll_date: datetime
 
+class PollReq(BaseModel):
+    group_id: UUID
+    poll_name: str
+

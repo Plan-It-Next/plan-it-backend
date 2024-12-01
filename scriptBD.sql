@@ -22,7 +22,8 @@ CREATE TABLE polls (
     group_id UUID REFERENCES groups (group_id),
     poll_name VARCHAR(255) NOT NULL,
     poll_date TIMESTAMP DEFAULT NOW(),
-    FOREIGN KEY (group_id) REFERENCES groups (group_id) ON DELETE CASCADE
+    FOREIGN KEY (group_id) REFERENCES groups (group_id) ON DELETE CASCADE,
+    CONSTRAINT unique_poll_name_group UNIQUE (group_id, poll_name)
 );
 
 CREATE TABLE user_polls (
