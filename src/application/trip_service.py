@@ -17,9 +17,14 @@ class TripService():
 
     async def get_trip_custom_filters(self, filter: TripFilter):
         trip=  await graph_repo.customfilter(filter)
+        print(trip)
         trip_format = await self.formatear_resultado_caminos(trip)
         return trip_format
 
+    async def get_trip_predef_filter(self):
+        trip = await graph_repo.maxSetFilterTrip()
+        trip_format = await self.formatear_resultado_caminos(trip)
+        return trip_format
 
     async def formatear_resultado_caminos(self,resultados_json):
         caminos_formateados = []
