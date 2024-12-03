@@ -16,3 +16,10 @@ class PollMod(BaseModel):
     poll_id: UUID
     poll_name: str
 
+class PollAndVotes(BaseModel):
+    poll_id: UUID
+    poll_name: str
+    poll_date: datetime
+    total_votes: int
+    true_votes: int
+
