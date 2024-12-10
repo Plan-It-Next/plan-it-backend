@@ -2,11 +2,12 @@ from fastapi import APIRouter, HTTPException
 from src.application.planning_service import PlanningService
 from src.infraestructure.gemini_repository import GeminiRepository
 from src.infraestructure.config_loader import cargar_configuracion
+import pathlib
 import os
 
-# Cargar configuración y configurar repositorio
-ruta_archivo_config = os.path.join(os.path.dirname(__file__), '../../infrastructure/configure.yaml')
-api_key = cargar_configuracion(ruta_archivo_config)
+# Cargar la clave de la API desde el archivo .env
+api_key = cargar_configuracion()
+
 gemini_repo = GeminiRepository(api_key=api_key)
 
 # Instanciar el servicio

@@ -9,7 +9,7 @@ class GeminiRepository:
     def obtener_planning(self, ciudad: str, fecha_ini: str, fecha_fin: str) -> dict:
         # Crear el mensaje para Gemini
         mensaje = (
-            f"Dame un planning para hacer del {fecha_ini} al {fecha_fin} en {ciudad}. "
+            f"Dame un planning en español para hacer del {fecha_ini} al {fecha_fin} en la ciudad de {ciudad}. "
             "La respuesta debes devolverla en formato JSON."
         )
         # Enviar el mensaje al modelo
