@@ -11,3 +11,7 @@ class PlanningService:
             raise ValueError("Los parámetros ciudad, fecha_ini y fecha_fin son obligatorios.")
 
         return self.gemini_repository.obtener_planning(ciudad, fecha_ini, fecha_fin)
+
+    def obtener_actividades(self,texto:str):
+
+        return self.gemini_repository.obtener_actividades(texto)
