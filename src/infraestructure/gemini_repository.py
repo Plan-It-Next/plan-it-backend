@@ -1,4 +1,7 @@
 import google.generativeai as genai
+import pandas as pd
+import re
+from pathlib import Path
 
 class GeminiRepository:
     def __init__(self, api_key: str):
@@ -24,26 +27,35 @@ class GeminiRepository:
 
     def obtener_actividades(self, texto: str) -> str:
         """
-        Extrae la ciudad del texto proporcionado y genera un prompt para
-        obtener actividades o lugares típicos para visitar en esa ciudad.
+        Extrae ciudades mencionadas en el texto a partir del archivo `world-cities.csv`
+        y genera un prompt para obtener actividades o lugares típicos en dichas ciudades.
 
-        :param texto: String que contiene información sobre una ciudad.
-        :return: String con una actividad o lugar típico para visitar en la ciudad.
+        :param texto: String que contiene información sobre ciudades o países.
+        :return: String con actividades o lugares típicos para visitar en las ciudades detectadas.
         """
-        import re
+        # Cargar la lista de ciudades desde el archivo CSV
+        # Definir la ruta al archivo
+        archivo_ciudades = Path(__file__).parent / "world-cities.csv"
+        # Comprobar si el archivo existe
+        if archivo_ciudades.exists():
+            ciudades_df = pd.read_csv(archivo_ciudades)
+            ciudades_europeas = set(ciudades_df['name'].tolist())  # Convertir a un conjunto para búsquedas rápidas
+        else:
+            raise FileNotFoundError(f"El archivo 'world-cities.csv' no se encuentra en {archivo_ciudades}")
 
-        # Intentar extraer el nombre de una ciudad desde el texto
-        # Puedes ajustar el regex según el idioma y el formato del texto
-        match = re.search(r"\b(?:en|de|a|la ciudad de|ciudad de)\s+([A-Z][a-záéíóúñü]+(?:\s+[A-Z][a-záéíóúñü]+)?)",
-                          texto)
-        if not match:
-            raise ValueError("No se pudo identificar una ciudad en el texto proporcionado.")
+        # Extraer palabras del texto y normalizarlas
+        palabras_texto = re.findall(r'\b\w+\b', texto)
+        palabras_texto = [palabra.capitalize() for palabra in palabras_texto]
 
-        ciudad = match.group(1)
+        # Identificar las ciudades mencionadas en el texto
+        ciudades_detectadas = list(set(palabras_texto) & ciudades_europeas)
+        if not ciudades_detectadas:
+            raise ValueError("No se detectaron ciudades en el texto proporcionado.")
 
-        # Crear el mensaje para Gemini
+        # Crear el mensaje para Gemini con las ciudades detectadas
         mensaje = (
-            f"Proporciona en español una actividad o lugar típico para visitar en {ciudad}. "
+            f"Proporciona en español actividades o lugares típicos para visitar en las siguientes ciudades: "
+            f"{', '.join(ciudades_detectadas)}. "
             "El resultado debe ser un texto breve y directo."
         )
 
