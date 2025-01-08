@@ -4,6 +4,26 @@
 --Límit es pot ampliar rutes fins a 6
 
 --Primera consulta que torna les etiquetes
+CREATE EXTENSION IF NOT EXISTS age;
+LOAD 'age';
+SET search_path = ag_catalog, "$user", public;
+
+
+SELECT * FROM ag_catalog.ag_graph;
+SELECT * FROM create_graph('el_grefo');
+
+SELECT *
+FROM cypher(
+    'el_grefo',
+    $$
+    MATCH (n)
+    DETACH DELETE n
+    $$
+) AS result(column_name agtype);
+
+
+
+
 SELECT *
 FROM cypher(
     'el_grefo',

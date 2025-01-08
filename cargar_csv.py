@@ -175,7 +175,7 @@ async def main():
         port=os.getenv('PORT')
     )
     try:
-        #await cargar_estaciones_desde_csv(conn, 'estaciones_aeropuertos.csv')
+        await cargar_estaciones_desde_csv(conn, 'estaciones_aeropuertos.csv')
         await insertar_aristas_desde_csv(conn, 'viajes.csv')
     finally:
         await conn.close()
