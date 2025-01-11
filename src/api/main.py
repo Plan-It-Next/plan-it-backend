@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 from src.api.routes.api_users import router as users_router
 from src.api.routes.api_groups import router as groups_router
 from src.api.routes.api_trips import router as trips_router
@@ -9,6 +11,18 @@ from src.api.routes.api_calendar import router as calendar_routes
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:3001",  # Permitir solicitudes desde el frontend
+    "http://127.0.0.1:3001", # También permitir desde 127.0.0.1
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Lista de orígenes permitidos
+    allow_credentials=True,
+    allow_methods=["*"],  # Permitir todos los métodos HTTP
+    allow_headers=["*"],  # Permitir todos los encabezados
+)
 
 app.include_router(users_router, prefix="/users", tags=["users"])
 app.include_router(groups_router, prefix="/groups", tags=["groups"])
