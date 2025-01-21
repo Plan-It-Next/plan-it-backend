@@ -27,7 +27,7 @@ async def obtener_planning(ciudad: str, fecha_ini: str, fecha_fin: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error interno del servidor")
 
-router.post("/activities")
+@router.post("/activities")
 async def obtener_actividades(texto:str):
     try:
         # Llamar al servicio
