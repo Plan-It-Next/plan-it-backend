@@ -31,9 +31,11 @@ async def obtener_planning(ciudad: str, fecha_ini: str, fecha_fin: str):
 async def obtener_actividades(texto:str):
     try:
         # Llamar al servicio
-        resultado = planning_service.obtener_planning(texto)
+        resultado = planning_service.obtener_actividades(texto)
         return {"planning": resultado}
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:
+        # Registrar el error para depuración
+        print(f"Error interno: {e}")  # Esto aparecerá en el terminal
         raise HTTPException(status_code=500, detail="Error interno del servidor")
