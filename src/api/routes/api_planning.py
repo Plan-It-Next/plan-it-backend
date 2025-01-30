@@ -1,4 +1,6 @@
 from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
+
 from src.application.planning_service import PlanningService
 from src.infraestructure.gemini_repository import GeminiRepository
 from src.infraestructure.config_loader import cargar_configuracion
@@ -16,6 +18,9 @@ planning_service = PlanningService(gemini_repo)
 # Crear el router
 router = APIRouter()
 
+class ActividadesRequest(BaseModel):
+    texto: str
+
 @router.post("/planning")
 async def obtener_planning(ciudad: str, fecha_ini: str, fecha_fin: str):
     try:
@@ -28,10 +33,10 @@ async def obtener_planning(ciudad: str, fecha_ini: str, fecha_fin: str):
         raise HTTPException(status_code=500, detail="Error interno del servidor")
 
 @router.post("/activities")
-async def obtener_actividades(texto:str):
+async def obtener_actividades(request: ActividadesRequest):
     try:
         # Llamar al servicio
-        resultado = planning_service.obtener_actividades(texto)
+        resultado = planning_service.obtener_actividades(request.texto)
         return {"planning": resultado}
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
